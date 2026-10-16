@@ -1,0 +1,114 @@
+[09/09 12:12:30      0s] 
+[09/09 12:12:30      0s] Cadence Innovus(TM) Implementation System.
+[09/09 12:12:30      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/09 12:12:30      0s] 
+[09/09 12:12:30      0s] Version:	v21.15-s110_1, built Wed Sep 09 13:08:12 PDT 2022
+[09/09 12:12:30      0s] Options:	-f fir_4taps.tcl 
+[09/09 12:12:30      0s] Date:		Wed Sep 09 12:12:30 2026
+[09/09 12:12:30      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[09/09 12:12:30      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[09/09 12:12:30      0s] 
+[09/09 12:12:30      0s] License:
+[09/09 12:12:30      0s] 		[12:12:30.328522] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[09/09 12:12:31      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[09/09 12:12:31      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/09 12:12:37      6s] **ERROR: (IMPSYT-468):	Unknown argument -f
+[09/09 12:12:37      6s] Usage: innovus
+[09/09 12:12:37      6s]  	[-abort_on_error]
+[09/09 12:12:37      6s]  	[-batch]
+[09/09 12:12:37      6s]  	[-cds_lib_file <in_file>]
+[09/09 12:12:37      6s]  	[-stylus]
+[09/09 12:12:37      6s]  	[-cpus <integer>]
+[09/09 12:12:37      6s]  	[-db <dir>]
+[09/09 12:12:37      6s]  	[-disable_user_startup]
+[09/09 12:12:37      6s]  	[-execute <Tcl_commands>]
+[09/09 12:12:37      6s]  	[-files <in_file_list>]
+[09/09 12:12:37      6s]  	[-help]
+[09/09 12:12:37      6s]  	[-ihdb <dir>]
+[09/09 12:12:37      6s]  	[-lic_multi_cpu <lic_list>]
+[09/09 12:12:37      6s]  	[-lic_options <lic_list>]
+[09/09 12:12:37      6s]  	[-lic_startup <lic_list>]
+[09/09 12:12:37      6s]  	[-lic_startup_options <lic_list>]
+[09/09 12:12:37      6s]  	[-lic_stack <integer>]
+[09/09 12:12:37      6s]  	[-log <prefix>]
+[09/09 12:12:37      6s]  	[-no_gui]
+[09/09 12:12:37      6s]  	[-no_logv]
+[09/09 12:12:37      6s]  	[-no_cmd]
+[09/09 12:12:37      6s]  	[-overwrite]
+[09/09 12:12:37      6s]  	[-version]
+[09/09 12:12:37      6s]  	[-wait <minutes>]
+[09/09 12:12:37      6s] 
+[09/09 12:12:37      6s] Usage: innovus [options]
+[09/09 12:12:37      6s] [-abort_on_error]
+[09/09 12:12:37      6s] 	Exit if an error is detected at any point.
+[09/09 12:12:37      6s] [-batch]
+[09/09 12:12:37      6s] 	No interactive prompt occurs. Exit after -execute and -files options
+[09/09 12:12:37      6s] 	are processed.
+[09/09 12:12:37      6s] [-cds_lib_file <in_file>]
+[09/09 12:12:37      6s] 	Load in_file rather than the default cds.lib file in the current
+[09/09 12:12:37      6s] 	directory to obtain the names and locations of OpenAccess libraries.
+[09/09 12:12:37      6s] [-stylus]
+[09/09 12:12:37      6s] 	Enable Common UI, Stylus flow kit, and Stylus metrics.
+[09/09 12:12:37      6s] [-cpus <integer>]
+[09/09 12:12:37      6s] 	Number of cpus to use for multi-threading on current host.
+[09/09 12:12:37      6s] [-db <dir>]
+[09/09 12:12:37      6s] 	The directory of a DB to read. It is read before -execute or -files are invoked.
+[09/09 12:12:37      6s] [-disable_user_startup]
+[09/09 12:12:37      6s] 	Only read the init file in the installation hierarchy. Do not read
+[09/09 12:12:37      6s] 	init files in the home or current directory.
+[09/09 12:12:37      6s] [-execute <Tcl_commands>]
+[09/09 12:12:37      6s] 	Tcl commands to execute at startup, before -files.
+[09/09 12:12:37      6s] [-files <in_file_list>]
+[09/09 12:12:37      6s] 	One or more Tcl files to source at startup, after -execute. Set shell envar CDS_STYLUS_SOURCE_VERBOSE to 0 if you don't want the source command output to default to verbose in Stylus.
+[09/09 12:12:37      6s] [-help]
+[09/09 12:12:37      6s] 	Write out the usage and options with brief descriptions.
+[09/09 12:12:37      6s] [-ihdb <dir>]
+[09/09 12:12:37      6s] 	Specifies an integrity/integrated Hierarchical Data Base to be read (e.g. xxx/my_design/placed) before -execute or -files are invoked.
+[09/09 12:12:37      6s] [-lic_multi_cpu <lic_list>]
+[09/09 12:12:37      6s] 	Control which licenses to use for higher multi-cpu usage in priority
+[09/09 12:12:37      6s] 	order from left to right. The allowed license names are:
+[09/09 12:12:37      6s] 	"invs_cpu invs invsb fel fexl invs_dcpu"
+[09/09 12:12:37      6s] [-lic_options <lic_list>]
+[09/09 12:12:37      6s] 	Ordered list for dynamic option license checkout in priority order
+[09/09 12:12:37      6s] 	from left to right. These are checked out when needed by a specific
+[09/09 12:12:37      6s] 	Tcl command. Legal names are:
+[09/09 12:12:37      6s] 	"invs_hier invs_ms invs_3d_ic invs_5nm invs_3nm invs_7nm invs_20nm invs_10nm invs_i20nm invs_i10nm
+[09/09 12:12:37      6s] 	 invs_hfr invs_gigaplace invs_gigaplace_gxl qrcaa enclp encan enccco encng vdixl_capacity modus_dft
+[09/09 12:12:37      6s] 	 invs_pi invs_ml invs_ehfs invs_dfm invs_sc invs_automotive midas_user
+[09/09 12:12:37      6s] 	 tpsxl tpsl vtsxl vtsl vtsxm vtsesd vtsaa"
+[09/09 12:12:37      6s] [-lic_startup <lic_list>]
+[09/09 12:12:37      6s] 	Request one of these licenses at startup in priority order from left
+[09/09 12:12:37      6s] 	to right. The supported licenses are:
+[09/09 12:12:37      6s] 	"invs invsb fexl vdixl vdi fel"
+[09/09 12:12:37      6s] [-lic_startup_options <lic_list>]
+[09/09 12:12:37      6s] 	Additional option licenses needed at startup. The allowed license names are:
+[09/09 12:12:37      6s] 	"invs_hier invs_ms invs_3d_ic invs_5nm invs_3nm invs_7nm invs_20nm invs_10nm invs_i20nm invs_i10nm
+[09/09 12:12:37      6s] 	 invs_hfr invs_gigaplace invs_gigaplace_gxl qrcaa enclp encan enccco encng vdixl_capacity modus_dft
+[09/09 12:12:37      6s] 	 invs_pi invs_ml invs_ehfs invs_dfm invs_sc invs_automotive midas_user
+[09/09 12:12:37      6s] 	 tpsxl tpsl vtsxl vtsl vtsxm vtsesd vtsaa"
+[09/09 12:12:37      6s] [-lic_stack <integer>]
+[09/09 12:12:37      6s] 	Number of licenses to stack for stackable licenses.
+[09/09 12:12:37      6s] [-log <prefix>]
+[09/09 12:12:37      6s] 	Prefix for the .log, .cmd, and .logv files. If 3 args are given like
+[09/09 12:12:37      6s] 	-log "a b c" then the 3 names are used without any extension added.
+[09/09 12:12:37      6s] 	If the .log file already exists, an integer is appended to all the
+[09/09 12:12:37      6s] 	names to make the files unique.
+[09/09 12:12:37      6s] [-no_gui]
+[09/09 12:12:37      6s] 	Disable GUI and Tk support. GUI will not be available later in the
+[09/09 12:12:37      6s] 	session.
+[09/09 12:12:37      6s] [-no_logv]
+[09/09 12:12:37      6s] 	Specifies that verbose log file will not be created.
+[09/09 12:12:37      6s] [-no_cmd]
+[09/09 12:12:37      6s] 	Specifies that verbose command file will not be created.
+[09/09 12:12:37      6s] [-overwrite]
+[09/09 12:12:37      6s] 	Overwrite an existing .log file (and associated .cmd, .logv files)
+[09/09 12:12:37      6s] 	instead of adding an integer to make the files unique.
+[09/09 12:12:37      6s] [-version]
+[09/09 12:12:37      6s] 	Return program version information.
+[09/09 12:12:37      6s] [-wait <minutes>]
+[09/09 12:12:37      6s] 	Number of minutes to wait for licenses before exiting. The default is 0.Lic Summary:
+[12:12:37.322322] Cdslmd servers: cadence-c2s
+[12:12:37.322329] Feature usage summary:
+[12:12:37.322330] Innovus_Impl_System
+

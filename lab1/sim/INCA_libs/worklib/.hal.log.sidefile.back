@@ -1,0 +1,13 @@
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: *M,_SCOPE: fa_tb
+halsynth: *W,INIUSP (./fa_tb.v,5|0): Module fa_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 1.

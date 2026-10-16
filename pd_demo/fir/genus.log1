@@ -1,0 +1,43 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:03:31.339282] Configured Lic search path (21.01-s002): 5280@cadence:29000@172.16.77.98
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: -files fir_4tap.tcl 
+Date:    Wed Sep 09 12:03:31 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     989965
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+
+[12:03:31.129633] Periodic Lic check successful
+[12:03:31.129633] Feature usage summary:
+[12:03:31.129634] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4tap.tcl
+File 'fir_4tap.tcl' does not exist.
+Encountered problems processing file: fir_4tap.tcl
+WARNING: This version of the tool is 1519 days old.
+@genus:root: 2> 
+@genus:root: 2> exit
+
+Lic Summary:
+[12:03:48.366931] Cdslmd servers: cadence
+[12:03:48.366939] Feature usage summary:
+[12:03:48.366939] Genus_Synthesis
+
+Normal exit.

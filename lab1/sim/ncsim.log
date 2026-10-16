@@ -1,0 +1,45 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+0 ns a=0 b=1 cin=0 sum=1 cout=0
+10 ns a=1 b=0 cin=1 sum=0 cout=1
+20 ns a=0 b=0 cin=0 sum=0 cout=0
+30 ns a=1 b=1 cin=1 sum=1 cout=1
+Simulation complete via $finish(1) at time 40 NS + 0
+./fa_tb.v:12 $finish;
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fa_tb(fa_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_1f43783b_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_1f43783b_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fa_tb(fa_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_1f43783b_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_1f43783b_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+ncsim: Memory Usage - 38.6M program + 283.8M data = 322.5M total (329.8M Peak)
+ncsim: CPU Usage - 0.6s system + 0.3s user = 0.9s total (341.8s, 0.3% cpu)

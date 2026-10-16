@@ -1,0 +1,6 @@
+ncelab(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+fa fa0 (.a(A[0]),.b(B[0]),.cin(Cin),.sum(Sum[0]),.cout(C1));
+     |
+ncelab: *E,CUVMUR (./bit4_ca.v,8|5): instance 'bit4_ca_tb.uut.fa0' of design unit 'fa' is unresolved in 'worklib.bit4_ca:module'.
+ncelab: Memory Usage - 49.9M program + 33.7M data = 83.7M total (Peak 83.7M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

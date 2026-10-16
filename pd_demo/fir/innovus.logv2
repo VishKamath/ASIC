@@ -1,0 +1,472 @@
+[09/09 12:13:51      0s] 
+[09/09 12:13:51      0s] Cadence Innovus(TM) Implementation System.
+[09/09 12:13:51      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/09 12:13:51      0s] 
+[09/09 12:13:51      0s] Version:	v21.15-s110_1, built Wed Sep 09 13:08:12 PDT 2022
+[09/09 12:13:51      0s] Options:	
+[09/09 12:13:51      0s] Date:		Wed Sep 09 12:13:51 2026
+[09/09 12:13:51      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[09/09 12:13:51      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[09/09 12:13:51      0s] 
+[09/09 12:13:51      0s] License:
+[09/09 12:13:51      0s] 		[12:13:51.328554] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[09/09 12:13:53      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[09/09 12:13:53      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/09 12:14:03      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[09/09 12:14:05     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[09/09 12:14:05     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[09/09 12:14:05     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[09/09 12:14:05     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[09/09 12:14:05     11s] @(#)CDS: CPE v21.15-s076
+[09/09 12:14:05     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Wed Sep 09 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[09/09 12:14:05     11s] @(#)CDS: OA 22.60-p076 Wed Sep 09 13:45:29 2022
+[09/09 12:14:05     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[09/09 12:14:05     11s] @(#)CDS: RCDB 11.15.0
+[09/09 12:14:05     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[09/09 12:14:05     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-09/09 18:31:54+0800)
+[09/09 12:14:05     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1017951_cad312vitcc.vit.ac.in_vlsi14_3xWaHG.
+
+[09/09 12:14:05     11s] Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+[09/09 12:14:06     12s] 
+[09/09 12:14:06     12s] **INFO:  MMMC transition support version v31-84 
+[09/09 12:14:06     12s] 
+[09/09 12:14:06     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[09/09 12:14:06     12s] <CMD> suppressMessage ENCEXT-2799
+[09/09 12:14:06     12s] <CMD> getVersion
+[09/09 12:14:06     12s] <CMD> getVersion
+[09/09 12:14:06     12s] <CMD> getVersion
+[09/09 12:14:08     12s] [INFO] Loading PVS 22.20 fill procedures
+[09/09 12:14:08     12s] <CMD> win
+[09/09 12:17:03     37s] <CMD> save_global Default.globals
+[09/09 12:17:05     37s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[09/09 12:17:05     37s] <CMD> set init_verilog fir_4tap.v
+[09/09 12:17:05     37s] <CMD> init_design
+[09/09 12:17:05     37s] 
+[09/09 12:17:05     37s] Loading LEF file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ...
+[09/09 12:17:05     37s] **WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+[09/09 12:17:05     37s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[09/09 12:17:05     37s] **WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+[09/09 12:17:05     37s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[09/09 12:17:05     37s] Set DBUPerIGU to M2 pitch 580.
+[09/09 12:17:05     37s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/09 12:17:05     37s] Type 'man IMPLF-200' for more detail.
+[09/09 12:17:05     37s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[09/09 12:17:05     37s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.62min, fe_real=3.23min, fe_mem=1106.8M) ***
+[09/09 12:17:05     37s] #% Begin Load netlist data ... (date=08/21 12:17:05, mem=1050.5M)
+[09/09 12:17:05     37s] *** Begin netlist parsing (mem=1106.8M) ***
+[09/09 12:17:05     37s] Created 0 new cells from 0 timing libraries.
+[09/09 12:17:05     37s] Reading netlist ...
+[09/09 12:17:05     37s] Backslashed names will retain backslash and a trailing blank character.
+[09/09 12:17:05     37s] **ERROR: (IMPVL-209):	In Verilog file 'fir_4tap.v', check line 4 near the text signed for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[09/09 12:17:05     37s] Verilog file 'fir_4tap.v' has errors!  See above.
+[09/09 12:17:05     37s] 
+[09/09 12:17:05     37s] *** Memory Usage v#1 (Current mem = 1107.766M, initial mem = 483.887M) ***
+[09/09 12:17:05     37s] #% End Load netlist data ... (date=08/21 12:17:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=1054.0M, current mem=1054.0M)
+[09/09 12:17:05     37s] **ERROR: (IMPVL-902):	Failed to read netlist fir_4tap.v. See previous error messages for details.  Resolve the issues and reload the design.
+[09/09 12:17:14     37s] <CMD> set init_lef_file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+[09/09 12:17:14     37s] <CMD> set init_verilog fir_4tap.v
+[09/09 12:17:14     37s] <CMD> init_design
+[09/09 12:17:14     37s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:17:14     37s] 
+[09/09 12:17:14     37s] Loading LEF file ../../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ...
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Oxide' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Nhvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Nimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Phvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Pimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Nzvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'SiProt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Cont' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Via1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Via4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Via5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-119):	LAYER 'Metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-119' for more detail.
+[09/09 12:17:14     37s] **WARN: (EMS-27):	Message (IMPLF-119) has exceeded the current message display limit of 20.
+[09/09 12:17:14     37s] To increase the message display limit, refer to the product command reference manual.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1X' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1V' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1H' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1XR90' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_E' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_W' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_N' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_S' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA1_2X2CUT' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2X' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2H' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2V' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2XR90' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2TOS' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2TOS_S' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2TOS_N' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_N' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_S' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_E' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_W' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+[09/09 12:17:14     37s] **WARN: (EMS-27):	Message (IMPLF-223) has exceeded the current message display limit of 20.
+[09/09 12:17:14     37s] To increase the message display limit, refer to the product command reference manual.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA1ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA2ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA3ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA4ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA5ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA6ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA7ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'VIA8ARRAY' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M9_M8v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M8_M7v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M7_M6v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M6_M5v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M5_M4v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M4_M3v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M3_M2v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M2_M1v' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M1_POv' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M1_DIFF' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M1_PSUB' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-151):	The viaRule 'M1_PIMP' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (EMS-27):	Message (IMPLF-151) has exceeded the current message display limit of 20.
+[09/09 12:17:14     37s] To increase the message display limit, refer to the product command reference manual.
+[09/09 12:17:14     37s] **WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+[09/09 12:17:14     37s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[09/09 12:17:14     37s] **WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+[09/09 12:17:14     37s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[09/09 12:17:14     37s] **WARN: (IMPLF-162):	The nonDefaultRule 'LEFDefaultRouteSpec_gpdk090' has been defined, the content will be skipped.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'OAI2BB1X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'OA22X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'NAND3X8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'SDFFRX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'TLATSRX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'OAI2BB1X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'DLY4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'ADDFX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'CLKAND2X12' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'MXI3XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'NAND3X6' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'SDFFRX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'MX3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'SDFFSRHQX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'OAI33XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'TLATSRX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'DFFHQX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'AOI221X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'ADDFX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (IMPLF-58):	MACRO 'AOI22XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[09/09 12:17:14     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:14     37s] Type 'man IMPLF-58' for more detail.
+[09/09 12:17:14     37s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[09/09 12:17:14     37s] To increase the message display limit, refer to the product command reference manual.
+[09/09 12:17:15     37s] **WARN: (IMPLF-61):	487 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[09/09 12:17:15     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[09/09 12:17:15     37s] Type 'man IMPLF-61' for more detail.
+[09/09 12:17:15     37s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[09/09 12:17:15     37s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.63min, fe_real=3.40min, fe_mem=1106.8M) ***
+[09/09 12:17:15     37s] #% Begin Load netlist data ... (date=08/21 12:17:15, mem=1053.2M)
+[09/09 12:17:15     37s] *** Begin netlist parsing (mem=1106.8M) ***
+[09/09 12:17:15     37s] Created 0 new cells from 0 timing libraries.
+[09/09 12:17:15     37s] Reading netlist ...
+[09/09 12:17:15     37s] Backslashed names will retain backslash and a trailing blank character.
+[09/09 12:17:15     37s] **ERROR: (IMPVL-209):	In Verilog file 'fir_4tap.v', check line 4 near the text signed for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[09/09 12:17:15     37s] Verilog file 'fir_4tap.v' has errors!  See above.
+[09/09 12:17:15     37s] 
+[09/09 12:17:15     37s] *** Memory Usage v#1 (Current mem = 1106.773M, initial mem = 483.887M) ***
+[09/09 12:17:15     37s] #% End Load netlist data ... (date=08/21 12:17:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=1053.4M, current mem=1053.4M)
+[09/09 12:17:15     37s] **ERROR: (IMPVL-902):	Failed to read netlist fir_4tap.v. See previous error messages for details.  Resolve the issues and reload the design.
+[09/09 12:21:14     60s] **ERROR: (IMPSYT-16087):	Specify the name of Delay Corner.
+[09/09 12:22:13     64s] <CMD> save_global Default.globals
+[09/09 12:22:14     64s] <CMD> set init_mmmc_file Default.view
+[09/09 12:22:14     64s] <CMD> init_design
+[09/09 12:22:14     64s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:14     64s] #% Begin Load MMMC data ... (date=08/21 12:22:14, mem=1075.6M)
+[09/09 12:22:14     64s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:16     64s] <CMD> set init_mmmc_file Default.view
+[09/09 12:22:16     64s] <CMD> init_design
+[09/09 12:22:16     64s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:16     64s] % Begin Load MMMC data ... (date=08/21 12:22:16, mem=1075.8M)
+[09/09 12:22:16     64s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> save_global Default.globals
+[09/09 12:22:48     69s] <CMD> set init_verilog fir_4tap.v
+[09/09 12:22:48     69s] <CMD> init_design
+[09/09 12:22:48     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:48     69s] % Begin Load MMMC data ... (date=08/21 12:22:48, mem=1076.4M)
+[09/09 12:22:48     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:50     69s] <CMD> init_design
+[09/09 12:22:50     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:50     69s] % Begin Load MMMC data ... (date=08/21 12:22:50, mem=1076.4M)
+[09/09 12:22:50     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:50     69s] <CMD> init_design
+[09/09 12:22:50     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:50     69s] % Begin Load MMMC data ... (date=08/21 12:22:50, mem=1076.4M)
+[09/09 12:22:50     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:51     69s] <CMD> init_design
+[09/09 12:22:51     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:51     69s] % Begin Load MMMC data ... (date=08/21 12:22:51, mem=1076.4M)
+[09/09 12:22:51     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:51     69s] <CMD> init_design
+[09/09 12:22:51     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:51     69s] % Begin Load MMMC data ... (date=08/21 12:22:51, mem=1076.4M)
+[09/09 12:22:51     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:51     69s] <CMD> init_design
+[09/09 12:22:51     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:51     69s] % Begin Load MMMC data ... (date=08/21 12:22:51, mem=1076.5M)
+[09/09 12:22:51     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:51     69s] <CMD> init_design
+[09/09 12:22:51     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:51     69s] % Begin Load MMMC data ... (date=08/21 12:22:51, mem=1076.5M)
+[09/09 12:22:51     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:22:51     69s] <CMD> init_design
+[09/09 12:22:51     69s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:22:51     69s] % Begin Load MMMC data ... (date=08/21 12:22:51, mem=1076.5M)
+[09/09 12:22:51     69s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:45     74s] <CMD> init_design
+[09/09 12:23:45     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:45     74s] % Begin Load MMMC data ... (date=08/21 12:23:45, mem=1074.3M)
+[09/09 12:23:45     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:46     74s] <CMD> init_design
+[09/09 12:23:46     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:46     74s] % Begin Load MMMC data ... (date=08/21 12:23:46, mem=1074.3M)
+[09/09 12:23:46     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:46     74s] <CMD> init_design
+[09/09 12:23:46     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:46     74s] % Begin Load MMMC data ... (date=08/21 12:23:46, mem=1074.4M)
+[09/09 12:23:46     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:46     74s] <CMD> init_design
+[09/09 12:23:46     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:46     74s] % Begin Load MMMC data ... (date=08/21 12:23:46, mem=1074.4M)
+[09/09 12:23:46     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:46     74s] <CMD> init_design
+[09/09 12:23:46     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:46     74s] % Begin Load MMMC data ... (date=08/21 12:23:46, mem=1074.4M)
+[09/09 12:23:46     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:46     74s] <CMD> init_design
+[09/09 12:23:46     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:46     74s] % Begin Load MMMC data ... (date=08/21 12:23:46, mem=1074.4M)
+[09/09 12:23:46     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:46     74s] <CMD> init_design
+[09/09 12:23:46     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:46     74s] % Begin Load MMMC data ... (date=08/21 12:23:46, mem=1074.4M)
+[09/09 12:23:46     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:46     74s] <CMD> init_design
+[09/09 12:23:46     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:46     74s] % Begin Load MMMC data ... (date=08/21 12:23:46, mem=1074.4M)
+[09/09 12:23:46     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog fir_4tap.v
+[09/09 12:23:47     74s] <CMD> init_design
+[09/09 12:23:47     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:23:47     74s] % Begin Load MMMC data ... (date=08/21 12:23:47, mem=1074.4M)
+[09/09 12:23:47     74s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog {fir_4tap.v output/netlist/fir_4tap_opt.v}
+[09/09 12:25:12     89s] <CMD> init_design
+[09/09 12:25:12     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:12     89s] % Begin Load MMMC data ... (date=08/21 12:25:12, mem=1074.7M)
+[09/09 12:25:12     89s] **ERROR: (TCLCMD-992):	need to specify either -library_set or (-early_library_set and -late_library_set)
+<CMD> set init_verilog {fir_4tap.v output/netlist/fir_4tap_opt.v}
+[09/09 12:25:13     89s] <CMD> init_design
+[09/09 12:25:13     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:13     89s] % Begin Load MMMC data ... (date=08/21 12:25:13, mem=1074.7M)
+[09/09 12:25:13     89s] <CMD> set init_verilog {fir_4tap.v output/netlist/fir_4tap_opt.v}
+[09/09 12:25:13     89s] <CMD> init_design
+[09/09 12:25:13     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:13     89s] % Begin Load MMMC data ... (date=08/21 12:25:13, mem=1074.7M)
+[09/09 12:25:13     89s] <CMD> set init_verilog {fir_4tap.v output/netlist/fir_4tap_opt.v}
+[09/09 12:25:13     89s] <CMD> init_design
+[09/09 12:25:13     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:13     89s] % Begin Load MMMC data ... (date=08/21 12:25:13, mem=1074.7M)
+[09/09 12:25:13     89s] <CMD> set init_verilog {fir_4tap.v output/netlist/fir_4tap_opt.v}
+[09/09 12:25:13     89s] <CMD> init_design
+[09/09 12:25:13     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:13     89s] % Begin Load MMMC data ... (date=08/21 12:25:13, mem=1074.7M)
+[09/09 12:25:13     89s] <CMD> set init_verilog {fir_4tap.v output/netlist/fir_4tap_opt.v}
+[09/09 12:25:13     89s] <CMD> init_design
+[09/09 12:25:13     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:13     89s] % Begin Load MMMC data ... (date=08/21 12:25:13, mem=1074.7M)
+[09/09 12:25:22     89s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:22     89s] <CMD> init_design
+[09/09 12:25:22     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:22     89s] % Begin Load MMMC data ... (date=08/21 12:25:22, mem=1074.7M)
+[09/09 12:25:23     89s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:23     89s] <CMD> init_design
+[09/09 12:25:23     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:23     89s] % Begin Load MMMC data ... (date=08/21 12:25:23, mem=1074.7M)
+[09/09 12:25:24     89s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:24     89s] <CMD> init_design
+[09/09 12:25:24     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:24     89s] % Begin Load MMMC data ... (date=08/21 12:25:24, mem=1074.7M)
+[09/09 12:25:24     89s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:24     89s] <CMD> init_design
+[09/09 12:25:24     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:24     89s] % Begin Load MMMC data ... (date=08/21 12:25:24, mem=1074.7M)
+[09/09 12:25:24     89s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:24     89s] <CMD> init_design
+[09/09 12:25:24     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:24     89s] % Begin Load MMMC data ... (date=08/21 12:25:24, mem=1074.7M)
+[09/09 12:25:24     89s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:24     89s] <CMD> init_design
+[09/09 12:25:24     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:24     89s] % Begin Load MMMC data ... (date=08/21 12:25:24, mem=1074.8M)
+[09/09 12:25:25     89s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:25     89s] <CMD> init_design
+[09/09 12:25:25     89s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:25     89s] % Begin Load MMMC data ... (date=08/21 12:25:25, mem=1074.8M)
+[09/09 12:25:47     91s] <CMD> set init_verilog output/netlist/fir_4tap_opt.v
+[09/09 12:25:47     91s] <CMD> init_design
+[09/09 12:25:47     91s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/09 12:25:47     91s] % Begin Load MMMC data ... (date=08/21 12:25:47, mem=1074.8M)
+[09/09 12:26:12     92s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Sep 09 12:26:12 2026
+  Total CPU time:     0:01:34
+  Total real time:    0:12:23
+  Peak memory (main): 1088.36MB
+
+[09/09 12:26:12     92s] 
+[09/09 12:26:12     92s] *** Memory Usage v#1 (Current mem = 1139.969M, initial mem = 483.887M) ***
+[09/09 12:26:12     92s] 
+[09/09 12:26:12     92s] *** Summary of all messages that are not suppressed in this session:
+[09/09 12:26:12     92s] Severity  ID               Count  Summary                                  
+[09/09 12:26:12     92s] WARNING   IMPLF-151           41  The viaRule '%s' has been defined, the c...
+[09/09 12:26:12     92s] WARNING   IMPLF-162            1  The nonDefaultRule '%s' has been defined...
+[09/09 12:26:12     92s] WARNING   IMPLF-58           487  MACRO '%s' has been found in the databas...
+[09/09 12:26:12     92s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[09/09 12:26:12     92s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[09/09 12:26:12     92s] ERROR     IMPLF-223          103  The LEF via '%s' definition already exis...
+[09/09 12:26:12     92s] WARNING   IMPLF-105            4  The layer '%s' specified in SAMENET spac...
+[09/09 12:26:12     92s] WARNING   IMPLF-119           27  LAYER '%s' has been found in the databas...
+[09/09 12:26:12     92s] ERROR     IMPSYT-16087         2  Specify the name of Delay Corner.        
+[09/09 12:26:12     92s] ERROR     IMPVL-902            2  Failed to read netlist %s. See previous ...
+[09/09 12:26:12     92s] ERROR     IMPVL-209            2  In Verilog file '%s', check line %d near...
+[09/09 12:26:12     92s] ERROR     TCLCMD-992          33  %s                                       
+[09/09 12:26:12     92s] *** Message Summary: 562 warning(s), 129 error(s)
+[09/09 12:26:12     92s] 
+[09/09 12:26:12     92s] --- Ending "Innovus" (totcpu=0:01:32, real=0:12:21, mem=1140.0M) ---

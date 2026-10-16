@@ -1,0 +1,177 @@
+$date
+	Thu Sep 10 11:53:32 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mac_unit $end
+$var wire 1 ! valid_out $end
+$var wire 16 " acc_out [15:0] $end
+$var reg 16 # a_in [15:0] $end
+$var reg 16 $ bias_in [15:0] $end
+$var reg 1 % clk $end
+$var reg 1 & clr_acc $end
+$var reg 1 ' rst_in $end
+$var reg 1 ( valid_in $end
+$var reg 16 ) w_in [15:0] $end
+$scope function q4_12_to_real $end
+$upscope $end
+$scope module dut $end
+$var wire 16 * a_in [15:0] $end
+$var wire 16 + bias_in [15:0] $end
+$var wire 1 % clk $end
+$var wire 1 & clr_acc $end
+$var wire 1 ' rst_in $end
+$var wire 1 ( valid_in $end
+$var wire 16 , w_in [15:0] $end
+$var reg 16 - acc_out [15:0] $end
+$var reg 33 . add_out [32:0] $end
+$var reg 32 / mult_out [31:0] $end
+$var reg 1 0 ovf_flag $end
+$var reg 1 ! valid_out $end
+$upscope $end
+$scope task drive_idle $end
+$upscope $end
+$scope task drive_mac $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+00
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+0'
+0&
+0%
+b0 $
+b0 #
+b0 "
+0!
+$end
+#5000
+1%
+#10000
+0%
+#15000
+1%
+#20000
+0%
+#25000
+1%
+1'
+#30000
+0%
+#35000
+b10000000000000 .
+b1000000000000 /
+b1000000000000 $
+b1000000000000 +
+b10000000000000 )
+b10000000000000 ,
+b100000000000 #
+b100000000000 *
+1&
+1(
+1%
+#40000
+0%
+#45000
+b10100000000000 .
+b100000000000 /
+b10000000000000 "
+b10000000000000 -
+1!
+b0 $
+b0 +
+b10000000000 #
+b10000000000 *
+0&
+1%
+#50000
+0%
+#55000
+b1000000000000 .
+b11111111111111111110100000000000 /
+b10100000000000 "
+b10100000000000 -
+b1110100000000000 )
+b1110100000000000 ,
+b1000000000000 #
+b1000000000000 *
+1%
+#60000
+0%
+#65000
+b1001000000000000 .
+b1000000000000000 /
+b1000000000000 "
+b1000000000000 -
+b10000000000000 )
+b10000000000000 ,
+b100000000000000 #
+b100000000000000 *
+1%
+#70000
+0%
+#75000
+b111111111111111110110000000000000 .
+b11111111111111111010000000000000 /
+b111111111111111 "
+b111111111111111 -
+10
+b1100000000000000 $
+b1100000000000000 +
+b1101000000000000 #
+b1101000000000000 *
+1&
+1%
+#80000
+0%
+#85000
+b111111111111111111000000000000000 .
+b0 /
+b1000000000000000 "
+b1000000000000000 -
+b0 $
+b0 +
+b0 )
+b0 ,
+b0 #
+b0 *
+0&
+0(
+1%
+#90000
+0%
+#95000
+0!
+1%
+#100000
+0%
+#105000
+1%
+#110000
+0%
+#115000
+1%
+#120000
+0%
+#125000
+1%
+#130000
+0%
+#135000
+1%

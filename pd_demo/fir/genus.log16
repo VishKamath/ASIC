@@ -1,0 +1,104 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[19:11:55.328626] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: 
+Date:    Wed Sep 09 19:11:55 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     1389865
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[19:11:56.465096] Periodic Lic check successful
+[19:11:56.465107] Feature usage summary:
+[19:11:56.465107] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+WARNING: This version of the tool is 1539 days old.
+@genus:root: 1> set_db init_lib_search_path /home/install/FOUNDRY/digital/180nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/180nm/dig/lib
+1 /home/install/FOUNDRY/digital/180nm/dig/lib
+@genus:root: 2> read_libs typical.lib
+
+Threads Configured:3
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX1' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 147265)
+        : Sequential timing checks, such as 'setup_rising' or 'hold_rising', on flop and latch cells require a clock pin. Verify that the 'clock' attribute of the clock pin is set to 'true' or that the clock pin has a 'clocked_on' attribute.
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX2' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 147568)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX4' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 147871)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNXL' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 148174)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX1' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 148477)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX2' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 148841)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX4' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 149205)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATXL' (File /home/install/FOUNDRY/digital/180nm/dig/lib/typical.lib, Line 149569)
+
+  Message Summary for Library typical.lib:
+  ****************************************
+  Missing clock pin in the sequential cell. [LBR-525]: 8
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  ****************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'typical.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@genus:root: 3>  
+@genus:root: 3> # Read your generated gate-level netlist
+@genus:root: 4> read_hdl -netlist output/netlist/fir_4tap_shared_180nm_typical_opt.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'output/netlist/fir_4tap_shared_180nm_typical_opt.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@genus:root: 5> elaborate fir_4tap
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'fir_4tap'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+1
+@genus:root: 6> set_db init_lib_search_path /home/install/FOUNDRY/digital/180nm/dig/lib
+Warning : Cannot modify library search path after reading library(s). [TUI-83]
+        : Cannot modify 'init_lib_search_path' attribute to '/home/install/FOUNDRY/digital/180nm/dig/lib'
+        : You must set the 'init_lib_search_path' attribute before you set the 'library' attribute.
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/180nm/dig/lib
+1 /home/install/FOUNDRY/digital/180nm/dig/lib
+@genus:root: 7> read_libs typical.lib
+Cannot use read_libs after read_mmmc
+@genus:root: 8>  
+@genus:root: 8> # Read your generated gate-level netlist
+@genus:root: 9> read_hdl -netlist output/netlist/fir_4tap_shared_180nm_typical_opt.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'output/netlist/fir_4tap_shared_180nm_typical_opt.v'.
+@genus:root: 10> read_hdl -netlist output/netlist/fir_4tap_180nm_typical_opt.v
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [check_design]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+
+Lic Summary:
+[19:14:13.056184] Cdslmd servers: cadence-c2s
+[19:14:13.056192] Feature usage summary:
+[19:14:13.056192] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,91 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[13:06:34.328586] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files script.tcl 
+Date:    Fri Sep 11 13:06:34 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     294110
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[13:06:35.280881] Periodic Lic check successful
+[13:06:35.280890] Feature usage summary:
+[13:06:35.280891] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source script.tcl
+#@ Begin verbose source ./script.tcl
+@file(script.tcl) 2: set TOP_MODULE "exp"
+@file(script.tcl) 4: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(script.tcl) 8: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(script.tcl) 9: read_hdl {exp.v}
+output reg [16:0] y
+     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ')', found 'output' in file 'exp.v' on line 8, column 6.
+        : Invalid Verilog syntax is parsed, or unsupported Verilog syntax is encountered.
+output reg [16:0] y
+     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'output' in file 'exp.v' on line 8, column 6.
+		y<=0;		
+		|
+Error   : Reference to undeclared variable. A variable/parameter must be declared before it is referenced. [VLOGPT-20] [read_hdl]
+        : Symbol 'y' in file 'exp.v' on line 12, column 3.
+        : Verilog module is using a parameter that is not defined in the module. You will get a notification for this, if you read the verilog file using the read_hdl command.
+		y <= (A*B)+(C*D);	
+		|
+Error   : Reference to undeclared variable. A variable/parameter must be declared before it is referenced. [VLOGPT-20] [read_hdl]
+        : Symbol 'y' in file 'exp.v' on line 15, column 3.
+#@ End verbose source ./script.tcl
+1
+Encountered problems processing file: script.tcl
+WARNING: This version of the tool is 1540 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 39s, ST: 6s, FG: 6s, CPU: 2.1%}, MEM {curr: 1.2G, peak: 1.2G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.8, cpu: 64, total: 2014.9G, free: 1833.5G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 59s, ST: 6s, FG: 6s, CPU: 1.9%}, MEM {curr: 1.2G, peak: 1.2G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.8, cpu: 64, total: 2014.9G, free: 1833.1G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 60s, ST: 6s, FG: 6s, CPU: 1.9%}, MEM {curr: 1.2G, peak: 1.2G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.8, cpu: 64, total: 2014.9G, free: 1833.1G}
+@genus:root: 2> exit
+
+Lic Summary:
+[13:07:36.303419] Cdslmd servers: cadence-c2s
+[13:07:36.303427] Feature usage summary:
+[13:07:36.303432] Genus_Synthesis
+
+Normal exit.

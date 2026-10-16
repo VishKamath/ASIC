@@ -1,0 +1,82 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi14/24BVD1042/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/cds.lib -logfile hal.log /home/vlsi14/24BVD1042/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/rtl/alu_good.v.
+hal: Workspace: /home/vlsi14/24BVD1042/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU.
+hal: Date: Wed Jul 29 12:37:01 IST 2026.
+
+hal: Running on design source files.....
+hal: Snapshot:  worklib.alu_good:v.
+
+  ==========================================================================
+Compiling design 
+
+
+	Top level design units:
+		alu_good
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+module alu_good #(
+|
+halcheck: *N,PRTCNT (./rtl/alu_good.v,1|0): Module/Entity 'alu_good' contains '4' ports.
+halcheck: (./rtl/alu_good.v,1): Number of Input ports: 3.
+halcheck: (./rtl/alu_good.v,1): Number of Output ports: 1.
+    parameter DATA_WIDTH = 4,
+|
+halcheck: *W,PRMVAL (./rtl/alu_good.v,2|0): Bit width not specified for parameter 'DATA_WIDTH'.
+    parameter OP_WIDTH   = 2
+|
+halcheck: *W,PRMVAL (./rtl/alu_good.v,3|0): Bit width not specified for parameter 'OP_WIDTH'.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 2.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+            default: y = a | b;
+|
+halstruct: *W,TPOUNR (./rtl/alu_good.v,16|0): Output 'y' of top-level module is not a register.
+module alu_good #(
+|
+halstruct: *W,IOCOMB (./rtl/alu_good.v,1|0): Combinational path detected between top-level input 'alu_good.a' and top-level output 'alu_good.y'.
+module alu_good #(
+|
+halstruct: *W,IOCOMB (./rtl/alu_good.v,1|0): Combinational path detected between top-level input 'alu_good.b' and top-level output 'alu_good.y'.
+module alu_good #(
+|
+halstruct: *N,NUMDFF (./rtl/alu_good.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 3.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (5)
+  IOCOMB (2)      PRMVAL (2)      TPOUNR (1)     
+
+ Notes    : (2)
+  NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib ./INCA_libs/irun.nc/cds.lib -hdlvar ./INCA_libs/irun.nc/hdl.var -sortby severity -sortby category -sortby tag hal.log
+

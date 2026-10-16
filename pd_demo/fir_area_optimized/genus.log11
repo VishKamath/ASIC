@@ -1,0 +1,121 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:13:57.328650] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Wed Sep 09 18:13:57 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     1091142
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:13:59.254377] Periodic Lic check successful
+[18:13:59.254387] Feature usage summary:
+[18:13:59.254387] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 1: set TOP_MODULE "fir_4tap_shared"
+@file(fir_4taps.tcl) 2: set HDL_FILE   "fir_4tap_shared_mult.v"
+@file(fir_4taps.tcl) 3: set SDC_FILE   "fir_4tap_shared_mult.sdc"
+@file(fir_4taps.tcl) 5: set tech_nodes [list 180nm 90nm 45nm]
+@file(fir_4taps.tcl) 6: set corners    [list slow typical fast]
+@file(fir_4taps.tcl) 9: file mkdir output/netlist
+@file(fir_4taps.tcl) 10: file mkdir output/constraints
+@file(fir_4taps.tcl) 11: file mkdir output/reports
+@file(fir_4taps.tcl) 13: foreach tech $tech_nodes {
+    foreach corner $corners {
+ 
+ 
+        # Set library search path
+        set_db init_lib_search_path [list "/home/install/FOUNDRY/digital/${tech}/dig/lib"]
+ 
+        # Explicitly evaluate read_libs with the resolved string to prevent TUI-202
+        set lib_file "${corner}.lib"
+        eval read_libs $lib_file
+ 
+        # Read RTL & Elaborate
+        read_hdl [list $HDL_FILE]
+        elaborate $TOP_MODULE
+        init_design
+ 
+        # Apply constraints
+        read_sdc $SDC_FILE
+ 
+        # Synthesis effort
+        set_db syn_generic_effort medium
+        set_db syn_map_effort medium
+        set_db syn_opt_effort medium
+ 
+        # Run Synthesis
+        syn_generic
+        syn_map
+        syn_opt
+ 
+        # Identifier tag
+        set run_tag "${TOP_MODULE}_${tech}_${corner}"
+ 
+        # Write Gate-Level Netlist & SDC
+        write_hdl > "output/netlist/${run_tag}_opt.v"
+        write_sdc > "output/constraints/${run_tag}_synth.sdc"
+ 
+        # Export Reports
+        report_timing > "output/reports/${run_tag}_timing.rpt"
+        report_power  > "output/reports/${run_tag}_power.rpt"
+        report_area   > "output/reports/${run_tag}_area.rpt"
+        report_gates  > "output/reports/${run_tag}_gates.rpt"
+        report_qor    > "output/reports/${run_tag}_qor.rpt"
+ 
+        puts "=============================================="
+        puts ">>> FINISHED: ${run_tag}"
+        puts "=============================================="
+    }
+}
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/180nm/dig/lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.620000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'fir_4tap_shared'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./fir_4taps.tcl
+1
+Encountered problems processing file: fir_4taps.tcl
+WARNING: This version of the tool is 1539 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[18:15:36.407507] Cdslmd servers: cadence-c2s
+[18:15:36.407515] Feature usage summary:
+[18:15:36.407515] Genus_Synthesis
+
+Normal exit.

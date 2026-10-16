@@ -1,0 +1,76 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:48:12.328594] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files /home/vlsi14/24BVD1042/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts 
+Date:    Fri Jul 31 12:48:12 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776984KB)
+PID:     2053926
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:48:14.142723] Periodic Lic check successful
+[12:48:14.142728] Feature usage summary:
+[12:48:14.142729] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source /home/vlsi14/24BVD1042/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts
+File '/home/vlsi14/24BVD1042/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts' cannot be opened for reading.
+1
+Encountered problems processing file: /home/vlsi14/24BVD1042/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts
+WARNING: This version of the tool is 1498 days old.
+@genus:root: 2> 
+@genus:root: 2> 
+@genus:root: 2> 
+@genus:root: 2> cd  ..
+@genus:root: 3> c\
+
+ambiguous command name "c": case catch cd cdnshelp chan change_link check_atpg_rules check_ccr check_constraints check_cpf check_cwd_object check_design check_dft_pad_cfg check_dft_rules check_dft_setup check_floorplan check_flow check_library check_placement check_power_intent check_power_structure check_timing_intent clear clock close commit_power_intent compare_collection compare_collections compare_crossing compare_sdc compress_scan_chains concat connect connect_cgic_test_pins_controlling_wrapper_cells connect_dft_top_level connect_opcg_segments connect_scan_chains connect_serial_scan_chains continue convert_polygon_to_boxes convert_to_opcg_scan convert_to_scan copy_collection copy_library_domain_attributes coroutine cpi_insert_auto_ls create_analysis_view create_base_cell_set create_chains_database create_clock create_command_help create_component create_component_binding create_component_implementation create_component_library create_component_operator create_component_package create_component_parameter create_component_pin create_constraint_mode create_cwd_check create_delay_corner create_derived_design create_design create_floorplan create_flow create_flow_step create_generated_clock create_group create_hinst create_hnet create_hport create_hport_bus create_inst create_library_domain create_library_set create_metric_page create_metric_table create_metric_table_heading create_module create_msg create_opcond create_place_blockage create_place_halo create_ple_model create_port create_port_bus create_primitive create_property_alias create_rc_corner create_region create_route_blockage create_route_halo create_route_rule create_row create_single_row create_snapshot create_timing_bin create_timing_condition create_track current_design current_design_name current_instance cut_power_domain_by_overlaps
+@genus:root: 4> 
+@genus:root: 4> 
+@genus:root: 4> 
+@genus:root: 4> 
+@genus:root: 4> 
+@genus:root: 4> 
+
+@genus:root: 4> /home/vlsi14/24BVD1042/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts
+invalid command name "/home/vlsi14/24BVD1042/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts"
+@genus:root: 5> end
+Error   : A required argument was not specified. [TUI-202] [parse_options]
+        : An argument of type '<string>' was not specified.
+        : Rerun the command specifying all required arguments.
+  end_flow: prematurely end a flow or step run 
+
+Usage: end_flow <string>
+
+    <string>:
+        flow or step to end and skip 
+Failed on 'end_flow'
+@genus:root: 6> close
+wrong # args: should be "close fid"
+@genus:root: 7> close fid
+@genus:root: 8> exit
+
+Lic Summary:
+[12:53:06.245265] Cdslmd servers: cadence-c2s
+[12:53:06.245272] Feature usage summary:
+[12:53:06.245273] Genus_Synthesis
+
+Normal exit.

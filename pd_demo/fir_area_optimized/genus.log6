@@ -1,0 +1,33 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[17:56:42.328650] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Wed Sep 09 17:56:42 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     1030020
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 3s, ST: 0s, FG: 0s, CPU: 100.0%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.1G, phys peak: 0.1G}, SYS {load: 0.9, cpu: 64, total: 2014.9G, free: 1879.7G}
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[17:56:45.459361] Periodic Lic check successful
+[17:56:45.459362] Feature usage summary:
+[17:56:45.459363] Genus_Synthesis
+Checking out license: Genus_Synthesis (3 seconds elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...Abnormal exit.

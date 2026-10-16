@@ -1,0 +1,18 @@
+# Format: clock  timeReq  slackR/slackF  setupR/setupF  instName/pinName   # cycle(s)
+vclk(R)->vclk(R)	7.800    */0.402         */2.000         y[15]    1
+vclk(R)->vclk(R)	7.800    0.504/*         2.000/*         y[16]    1
+vclk(R)->vclk(R)	7.800    */0.663         */2.000         y[14]    1
+vclk(R)->vclk(R)	7.800    */0.920         */2.000         y[13]    1
+vclk(R)->vclk(R)	7.800    */1.180         */2.000         y[12]    1
+vclk(R)->vclk(R)	7.800    */1.483         */2.000         y[11]    1
+vclk(R)->vclk(R)	7.800    */1.744         */2.000         y[10]    1
+vclk(R)->vclk(R)	7.800    */2.018         */2.000         y[9]    1
+vclk(R)->vclk(R)	7.800    */2.263         */2.000         y[8]    1
+vclk(R)->vclk(R)	7.800    */2.561         */2.000         y[7]    1
+vclk(R)->vclk(R)	7.800    */2.818         */2.000         y[6]    1
+vclk(R)->vclk(R)	7.800    */3.068         */2.000         y[5]    1
+vclk(R)->vclk(R)	7.800    3.382/*         2.000/*         y[4]    1
+vclk(R)->vclk(R)	7.800    */3.732         */2.000         y[3]    1
+vclk(R)->vclk(R)	7.800    4.077/*         2.000/*         y[2]    1
+vclk(R)->vclk(R)	7.800    4.218/*         2.000/*         y[1]    1
+vclk(R)->vclk(R)	7.800    4.829/*         2.000/*         y[0]    1

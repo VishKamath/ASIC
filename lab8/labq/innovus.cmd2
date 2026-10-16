@@ -1,0 +1,143 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Sep 18 11:40:58 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/vlsi14/24BVD1042/lab8/labq/exp.enc.dat exp
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setDrawView place
+update_library_set -name slow -timing {../../../../install/FOUNDRY/digital/90nm/dig/lib/slow.lib}
+update_library_set -name fast -timing {../../../../install/FOUNDRY/digital/90nm/dig/lib/fast.lib}
+update_constraint_mode -name c -sdc_files {exp_constraints.sdc}
+set_analysis_view -setup {best} -hold {worst}
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix exp_preCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -hold -pathReports -slackReports -numPaths 50 -prefix exp_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+create_ccopt_clock_tree_spec
+ctd_win -side none -id ctd_window
+selectObject Net clk
+zoomSelected
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix exp_postCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix exp_postCTS -outDir timingReports
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 9
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+setAnalysisMode -cppr both -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew true -analysisType onChipVariation -log true
+setAnalysisMode -checkType hold
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix exp_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix exp_postRoute -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+optDesign -postRoute -hold
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report exp.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+zoomBox -66.00900 -9.66050 163.58450 101.33950
+ui_view_box
+ui_view_box
+dbquery -area {-66.009 -9.6605 163.5845 101.3395} -objType inst
+dbquery -area {-66.009 -9.6605 163.5845 101.3395} -objType regular
+dbquery -area {-66.009 -9.6605 163.5845 101.3395} -objType special
+selectInst WALLACE_CSA_DUMMY_OP_groupi_g9168__3680
+deselectInst WALLACE_CSA_DUMMY_OP_groupi_g9168__3680
+deselectInst WALLACE_CSA_DUMMY_OP_groupi_g9168__3680
+selectObject Wire {B[5](95850,107450,96130,112370)}
+deselectObject Wire {B[5](95850,107450,96130,112370)}
+deselectObject Wire {B[5](95850,107450,96130,112370)}
+selectObject Wire {D[5](78450,140510,78730,162110)}
+deselectObject Wire {D[5](78450,140510,78730,162110)}
+deselectObject Wire {D[5](78450,140510,78730,162110)}
+selectInst WALLACE_CSA_DUMMY_OP_groupi_g9212__6161
+deselectInst WALLACE_CSA_DUMMY_OP_groupi_g9212__6161
+deselectInst WALLACE_CSA_DUMMY_OP_groupi_g9212__6161
+selectInst WALLACE_CSA_DUMMY_OP_groupi_g9212__6161
+zoomBox -47.41250 4.40100 147.74200 98.75100

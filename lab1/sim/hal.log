@@ -1,0 +1,139 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi14/24BVD1042/lab1/sim/cds.lib -logfile hal.log worklib.fa_tb:module.
+hal: Snapshot:  worklib.fa_tb:module.
+hal: Workspace: /home/vlsi14/24BVD1042/lab1/sim.
+hal: Date: Fri Jul 17 13:03:25 IST 2026.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+module fa_tb;
+|
+halcheck: *W,NEEDIO (./fa_tb.v,1|0): Top-level module 'fa_tb' has no inputs/outputs/inouts.
+initial begin 
+|
+halcheck: *W,NOBLKN (./fa_tb.v,5|0): Each block should be labeled with a meaningful name.
+$monitor("%0t ns a=%0b b=%0b cin=%0b sum=%0b cout=%0b",$time,a,b,cin,sum,cout);
+|
+halcheck: *W,BADSYS (./fa_tb.v,6|0): System task $monitor in module 'fa_tb' is ignored.
+a=1'b0;b=1'b0;cin=1'b0;#10;
+|
+halcheck: *W,SEPLIN (./fa_tb.v,7|0): Use a separate line for each HDL statement.
+a=1'b0;b=1'b0;cin=1'b0;#10;
+|
+halcheck: *W,EMPSTM (./fa_tb.v,7|0): Module 'fa_tb' contains an empty statement.
+a=1'b1;b=1'b1;cin=1'b1;#10;
+|
+halcheck: *W,SEPLIN (./fa_tb.v,8|0): Use a separate line for each HDL statement.
+a=1'b1;b=1'b1;cin=1'b1;#10;
+|
+halcheck: *W,EMPSTM (./fa_tb.v,8|0): Module 'fa_tb' contains an empty statement.
+a=1'b0;b=1'b0;cin=1'b0;#10;
+|
+halcheck: *W,SEPLIN (./fa_tb.v,10|0): Use a separate line for each HDL statement.
+a=1'b0;b=1'b0;cin=1'b0;#10;
+|
+halcheck: *W,EMPSTM (./fa_tb.v,10|0): Module 'fa_tb' contains an empty statement.
+a=1'b1;b=1'b1;cin=1'b1;#10;
+|
+halcheck: *W,SEPLIN (./fa_tb.v,11|0): Use a separate line for each HDL statement.
+a=1'b1;b=1'b1;cin=1'b1;#10;
+|
+halcheck: *W,EMPSTM (./fa_tb.v,11|0): Module 'fa_tb' contains an empty statement.
+$finish;
+|
+halcheck: *W,BADSYS (./fa_tb.v,12|0): System task $finish in module 'fa_tb' is ignored.
+fa uut(.a(a),.b(b),.cin(cin),.sum(sum),.cout(cout));
+|
+halcheck: *N,IDLENG (./fa_tb.v,4|0): Identifier name 'uut' is not of appropriate length (4 to 16 characters).
+module fa(a,b,cin,sum,cout);
+|
+halcheck: *N,IDLENG (./fa.v,1|0): Identifier name 'fa' is not of appropriate length (4 to 16 characters).
+module fa(a,b,cin,sum,cout);
+|
+halcheck: *N,PRTCNT (./fa.v,1|0): Module/Entity 'fa' contains '5' ports.
+halcheck: (./fa.v,1): Number of Input ports: 3.
+halcheck: (./fa.v,1): Number of Output ports: 2.
+input a,b,cin;
+|
+halcheck: *N,DECLIN (./fa.v,2|0): Use a separate line for each HDL declaration.
+output sum,cout;
+|
+halcheck: *N,DECLIN (./fa.v,3|0): Use a separate line for each HDL declaration.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 12.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+initial begin 
+|
+halsynth: *W,INIUSP (./fa_tb.v,5|0): Module fa_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 1.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+fa uut(.a(a),.b(b),.cin(cin),.sum(sum),.cout(cout));
+|
+halstruct: *E,UNCONI (./fa_tb.v,4|0): Input port 'a' of entity/module 'fa' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'fa_tb.uut'.
+halstruct: (./fa_tb.v,4): 'a' mapped to actual expression 'a' which is undriven.
+fa uut(.a(a),.b(b),.cin(cin),.sum(sum),.cout(cout));
+|
+halstruct: *E,UNCONI (./fa_tb.v,4|0): Input port 'b' of entity/module 'fa' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'fa_tb.uut'.
+halstruct: (./fa_tb.v,4): 'b' mapped to actual expression 'b' which is undriven.
+fa uut(.a(a),.b(b),.cin(cin),.sum(sum),.cout(cout));
+|
+halstruct: *E,UNCONI (./fa_tb.v,4|0): Input port 'cin' of entity/module 'fa' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'fa_tb.uut'.
+halstruct: (./fa_tb.v,4): 'cin' mapped to actual expression 'cin' which is undriven.
+fa uut(.a(a),.b(b),.cin(cin),.sum(sum),.cout(cout));
+|
+halstruct: *W,UNCONO (./fa_tb.v,4|0): Port 'sum' (which is being used as an output) of entity/module 'fa' is being driven inside the design, but not connected (either partially or completely) in its instance 'fa_tb.uut'.
+fa uut(.a(a),.b(b),.cin(cin),.sum(sum),.cout(cout));
+|
+halstruct: *W,UNCONO (./fa_tb.v,4|0): Port 'cout' (which is being used as an output) of entity/module 'fa' is being driven inside the design, but not connected (either partially or completely) in its instance 'fa_tb.uut'.
+assign sum=(a^b^cin);
+|
+halstruct: *W,SYNPRT (./fa.v,4|0): Output port 'sum' is assigned asynchronously.
+assign cout=((a&b)|(b&cin)|(cin&a));
+|
+halstruct: *W,SYNPRT (./fa.v,5|0): Output port 'cout' is assigned asynchronously.
+module fa_tb;
+|
+halstruct: *N,NUMDFF (./fa_tb.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 3.
+halstruct: Total warnings = 4.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (3)
+  UNCONI (3)     
+
+ Warnings : (17)
+  BADSYS (2)      EMPSTM (4)      INIUSP (1)      NEEDIO (1)     
+  NOBLKN (1)      SEPLIN (4)      SYNPRT (2)      UNCONO (2)     
+
+ Notes    : (6)
+  DECLIN (2)      IDLENG (2)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/vlsi14/24BVD1042/lab1/sim/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

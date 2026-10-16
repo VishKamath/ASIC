@@ -1,0 +1,194 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-sendToIndago-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 1920x977+-1+27}] != ""} {
+    window geometry "Design Browser 1" 1920x977+-1+27
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set -scope  simulator::fa_tb.uut 
+browser set \
+    -signalsort name
+browser yview see  simulator::fa_tb.uut 
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1920x977+-1+27}] != ""} {
+    window geometry "Waveform 1" 1920x977+-1+27
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ns \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	simulator::fa_tb.a
+	} ]
+set id [waveform add -signals  {
+	simulator::fa_tb.b
+	} ]
+set id [waveform add -signals  {
+	simulator::fa_tb.cin
+	} ]
+set id [waveform add -signals  {
+	simulator::fa_tb.cout
+	} ]
+set id [waveform add -signals  {
+	simulator::fa_tb.sum
+	} ]
+
+waveform xview limits 0 80ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Schematic Tracer windows
+#
+if {[catch {window new SchematicWindow -name "Schematic Tracer 1" -geometry 1920x977+-1+27}] != ""} {
+    window geometry "Schematic Tracer 1" 1920x977+-1+27
+}
+window target "Schematic Tracer 1" on
+schematic using "Schematic Tracer 1"
+schematic sidebar visibility partial
+schematic set \
+    -radix default \
+    -fullsignalname 0 \
+    -showvalue 1 \
+    -showstrength 0 \
+    -showgrey 0 \
+    -tracemode Single \
+    -showrtl 1 \
+    -showcells 1 \
+    -showcellpins 0
+schematic timecontrol set -lock 0
+schematic restore -state {# String saved with Nlview version 6.3.5  2013-09-24 bk=1.2895 VDI=33 GEI=35
+#  -string
+# non-default properties - (restore without -noprops)
+property attrcolor #40e0d0
+property attrfontsize 10
+property boxmaxwidth 400
+property boxmingap 40
+property boxminheight 40
+property boxminwidth 100
+property buscolor #00ff00
+property fillcolor1 #000000
+property fillcolor2 #000000
+property gatecellname 1
+property netcolor #00ff00
+property objecthighlight0 #ff00aa
+property objecthighlight1 #ff00aa
+property objecthighlight2 #00ff00
+property objecthighlight3 #ffff00
+property objecthighlight9 #ffffaf
+property pinattrmax 200
+property selectionappearance 2
+property selectioncolor #ffffaf
+property sheetheight 0
+property sheetwidth 0
+property showhierpinname 1
+property showinvisibles 1
+property showmarks 1
+#
+module new module {}
+load symbol DAI_SOURCE_IN {} DEF port 0 input -loc -14 0 0 0 pinattrdsp @name -cr -2 -5 8i attrdsp @cell -ll -10 16 10 path 0 -6 9 -6 12 -3 12 6 0 6 0 -6 path 12 -3 9 -3 9 -6 path 2 -3 6 -3 path 2 0 10 0 path 2 3 10 3
+load symbol DAI_SOURCE_OUT {} DEF port 0 output -loc 26 0 12 0 pinattrdsp @name -cl 30 -5 8i attrdsp @cell -ll -10 16 10 path 0 -6 9 -6 12 -3 12 6 0 6 0 -6 path 12 -3 9 -3 9 -6 path 2 -3 6 -3 path 2 0 10 0 path 2 3 10 3
+levelinfo -pg 1 0 10
+show
+#
+module new root {} -nosplit
+load symbol fa {} HIERBOX pin 0 input.left pin 1 input.left pin 2 input.left pin 3 output.right pin 4 output.right fillcolor 2
+load symbol and_0 {} AND pin 0 input pin 1 input pin 2 output fillcolor 1
+load symbol and_1 {} AND pin 0 input pin 1 input pin 2 output fillcolor 1
+load symbol and_2 {} AND pin 0 input pin 1 input pin 2 output fillcolor 1
+load symbol or_3 {} OR pin 0 input pin 1 input pin 2 output fillcolor 1
+load symbol or_4 {} OR pin 0 input pin 1 input pin 2 output fillcolor 1
+load symbol xor_5 {} XOR pin 0 input pin 1 input pin 2 output fillcolor 1
+load symbol xor_6 {} XOR pin 0 input pin 1 input pin 2 output fillcolor 1
+load inst simulator::fa_tb,uut fa {} -attr @name uut -attr @color #00ffff -pinAttr 0 @name a=0 -pinAttr 1 @name b=1 -pinAttr 2 @name cin=0 -pinAttr 3 @name sum=1 -pinAttr 4 @name cout=0 -hierPinAttr 0 @name a -hierPinAttr 1 @name b -hierPinAttr 2 @name cin -hierPinAttr 3 @name sum -hierPinAttr 4 @name cout -pg 1 -lvl 1 -y 30 -regy -10
+load inst simulator::fa_tb,uut,OR_0 or_3 {} -hier simulator::fa_tb,uut -attr @name {} -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name {} -pinAttr 1 @name {} -pinAttr 2 @name {} -pg 1 -lvl 2 -y 110
+load inst simulator::fa_tb,uut,AND_0 and_0 {} -hier simulator::fa_tb,uut -attr @name {} -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name a= -pinAttr 0 @color #ffffff -pinAttr 1 @name b= -pinAttr 1 @color #ffffff -pinAttr 2 @name {} -pg 1 -lvl 1 -y 140
+load inst simulator::fa_tb,uut,OR_1 or_4 {} -hier simulator::fa_tb,uut -attr @name {} -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name {} -pinAttr 1 @name {} -pinAttr 2 @name cout= -pinAttr 2 @color #ffffff -pg 1 -lvl 3 -y 120
+load inst simulator::fa_tb,uut,AND_1 and_1 {} -hier simulator::fa_tb,uut -attr @name {} -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name b= -pinAttr 0 @color #ffffff -pinAttr 1 @name cin= -pinAttr 1 @color #ffffff -pinAttr 2 @name {} -pg 1 -lvl 1 -y 90
+load inst simulator::fa_tb,uut,AND_2 and_2 {} -hier simulator::fa_tb,uut -attr @name {} -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name cin= -pinAttr 0 @color #ffffff -pinAttr 1 @name a= -pinAttr 1 @color #ffffff -pinAttr 2 @name {} -pg 1 -lvl 2 -y 160
+load inst simulator::fa_tb,uut,XOR_0 xor_5 {} -hier simulator::fa_tb,uut -attr @name {} -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name a= -pinAttr 0 @color #ffffff -pinAttr 1 @name b= -pinAttr 1 @color #ffffff -pinAttr 2 @name {} -pg 1 -lvl 2 -y 50
+load inst simulator::fa_tb,uut,XOR_1 xor_6 {} -hier simulator::fa_tb,uut -attr @name {} -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name {} -pinAttr 1 @name cin= -pinAttr 1 @color #ffffff -pinAttr 2 @name sum= -pinAttr 2 @color #ffffff -pg 1 -lvl 3 -y 70
+load net simulator::fa_tb,uut,sum -attr @name sum -attr @color #666666.1 -hierPin simulator::fa_tb,uut 3 -pin simulator::fa_tb,uut,XOR_1 2
+netloc simulator::fa_tb,uut,sum 1 3 1 NJ
+load net simulator::fa_tb,uut,cout -attr @name cout -attr @color #666666.1 -hierPin simulator::fa_tb,uut 4 -pin simulator::fa_tb,uut,OR_1 2
+netloc simulator::fa_tb,uut,cout 1 3 1 NJ
+load net simulator::fa_tb,uut,_rtlTemp_1 -attr @name _rtlTemp_1 -attr @color #666666.1 -pin simulator::fa_tb,uut,XOR_0 2 -pin simulator::fa_tb,uut,XOR_1 0
+netloc simulator::fa_tb,uut,_rtlTemp_1 1 2 1 390
+load net simulator::fa_tb,uut,cin -attr @name cin -attr @color #666666.1 -hierPin simulator::fa_tb,uut 2 -pin simulator::fa_tb,uut,AND_1 1 -pin simulator::fa_tb,uut,AND_2 0 -pin simulator::fa_tb,uut,XOR_1 1
+netloc simulator::fa_tb,uut,cin 1 0 3 90 60 250 80 NJ
+load net simulator::fa_tb,uut,_rtlTemp_2 -attr @name _rtlTemp_2 -attr @color #666666.1 -pin simulator::fa_tb,uut,OR_0 2 -pin simulator::fa_tb,uut,OR_1 0
+netloc simulator::fa_tb,uut,_rtlTemp_2 1 2 1 N
+load net simulator::fa_tb,uut,_rtlTemp_3 -attr @name _rtlTemp_3 -attr @color #666666.1 -pin simulator::fa_tb,uut,AND_0 2 -pin simulator::fa_tb,uut,OR_0 0
+netloc simulator::fa_tb,uut,_rtlTemp_3 1 1 1 230
+load net simulator::fa_tb,uut,a -attr @name a -attr @color #666666.1 -hierPin simulator::fa_tb,uut 0 -pin simulator::fa_tb,uut,AND_0 0 -pin simulator::fa_tb,uut,AND_2 1 -pin simulator::fa_tb,uut,XOR_0 0
+netloc simulator::fa_tb,uut,a 1 0 2 90 170 270
+load net simulator::fa_tb,uut,_rtlTemp_4 -attr @name _rtlTemp_4 -attr @color #666666.1 -pin simulator::fa_tb,uut,AND_1 2 -pin simulator::fa_tb,uut,OR_0 1
+netloc simulator::fa_tb,uut,_rtlTemp_4 1 1 1 230
+load net simulator::fa_tb,uut,b -attr @name b -attr @color #666666.1 -hierPin simulator::fa_tb,uut 1 -pin simulator::fa_tb,uut,AND_0 1 -pin simulator::fa_tb,uut,AND_1 0 -pin simulator::fa_tb,uut,XOR_0 1
+netloc simulator::fa_tb,uut,b 1 0 2 110 40 NJ
+load net simulator::fa_tb,uut,_rtlTemp_5 -attr @name _rtlTemp_5 -attr @color #666666.1 -pin simulator::fa_tb,uut,AND_2 2 -pin simulator::fa_tb,uut,OR_1 1
+netloc simulator::fa_tb,uut,_rtlTemp_5 1 2 1 390
+levelinfo -pg 1 0 50 630
+levelinfo -hier simulator::fa_tb,uut 60 160 320 440 560
+show
+zoom 2.26274
+scrollpos -235 -31
+#
+# initialize ictrl to current module root {}
+ictrl init {} ,
+}
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 730x250+261+564
+
+#
+# Layout selection
+#

@@ -1,0 +1,2756 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+Options:	-files run.tcl 
+Date:		Fri Oct 16 12:55:11 2026
+Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[12:55:11.328570] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_459843_gQZ9do'.
+#@ Processing -files option
+Sourcing tcl/tk file 'run.tcl' ...
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/setup_hold.v
+<CMD> set_top_module setup_hold_top
+#% Begin Load MMMC data ... (date=10/16 12:55:27, mem=1230.7M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=1230.7M, current mem=1230.7M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=37.0M, fe_cpu=0.23min, fe_real=0.27min, fe_mem=1334.0M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:27, mem=1237.9M)
+*** Begin netlist parsing (mem=1334.0M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/setup_hold.v'
+
+*** Memory Usage v#1 (Current mem = 1458.109M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1458.1M) ***
+#% End Load netlist data ... (date=10/16 12:55:27, total cpu=0:00:00.3, real=0:00:00.0, peak res=1308.4M, current mem=1304.4M)
+Set top cell to setup_hold_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell setup_hold_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 10 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1805.555M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:14.8, real=0:00:17.0, peak res=1910.0M, current mem=1910.0M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/SDC/01_setup_fail.sdc
+Current (total cpu=0:00:15.0, real=0:00:17.0, peak res=1940.9M, current mem=1902.1M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1903.6M, current mem=1903.6M)
+Current (total cpu=0:00:15.1, real=0:00:17.0, peak res=1940.9M, current mem=1903.6M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2227.95 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: setup_hold_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2249.45)
+/dev/null
+End delay calculation. (MEM=2449.04 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2449.04 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:29 2026
+viaInitial ends at Fri Oct 16 12:55:29 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1508.184M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/setup_hold.v
+<CMD> set_top_module setup_hold_top
+#% Begin Load MMMC data ... (date=10/16 12:55:30, mem=1392.3M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:30, total cpu=0:00:00.0, real=0:00:00.0, peak res=1392.3M, current mem=1392.3M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.28min, fe_real=0.32min, fe_mem=1528.2M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:30, mem=1390.0M)
+*** Begin netlist parsing (mem=1528.2M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/setup_hold.v'
+
+*** Memory Usage v#1 (Current mem = 1646.250M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1642.2M) ***
+#% End Load netlist data ... (date=10/16 12:55:30, total cpu=0:00:00.3, real=0:00:00.0, peak res=1451.1M, current mem=1451.1M)
+Set top cell to setup_hold_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell setup_hold_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 10 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1979.781M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:17.6, real=0:00:20.0, peak res=2033.4M, current mem=2016.2M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/SDC/02_setup_fixed.sdc
+Current (total cpu=0:00:17.8, real=0:00:20.0, peak res=2033.4M, current mem=1984.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1985.4M, current mem=1985.4M)
+Current (total cpu=0:00:17.8, real=0:00:20.0, peak res=2033.4M, current mem=1985.4M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2284.14 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: setup_hold_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2305.65)
+/dev/null
+End delay calculation. (MEM=2496.7 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2496.7 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:31 2026
+viaInitial ends at Fri Oct 16 12:55:31 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1567.840M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/hold_fail.v
+<CMD> set_top_module hold_fail_top
+#% Begin Load MMMC data ... (date=10/16 12:55:32, mem=1438.0M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1438.0M, current mem=1438.0M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.32min, fe_real=0.35min, fe_mem=1587.8M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:32, mem=1437.6M)
+*** Begin netlist parsing (mem=1587.8M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/hold_fail.v'
+
+*** Memory Usage v#1 (Current mem = 1705.906M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1705.9M) ***
+#% End Load netlist data ... (date=10/16 12:55:33, total cpu=0:00:00.3, real=0:00:01.0, peak res=1499.0M, current mem=1499.0M)
+Set top cell to hold_fail_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell hold_fail_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 2 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2039.438M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:19.8, real=0:00:22.0, peak res=2058.4M, current mem=2058.4M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/SDC/03_hold_fail.sdc
+Current (total cpu=0:00:20.1, real=0:00:22.0, peak res=2066.8M, current mem=2026.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2029.4M, current mem=2029.4M)
+Current (total cpu=0:00:20.1, real=0:00:22.0, peak res=2066.8M, current mem=2029.4M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2328.45 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: hold_fail_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2349.95)
+/dev/null
+End delay calculation. (MEM=2518.02 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2518.02 CPU=0:00:00.1 REAL=0:00:01.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:34 2026
+viaInitial ends at Fri Oct 16 12:55:34 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1620.160M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/hold_fail.v
+<CMD> set_top_module hold_fail_top
+#% Begin Load MMMC data ... (date=10/16 12:55:34, mem=1481.1M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1481.1M, current mem=1481.1M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.36min, fe_real=0.40min, fe_mem=1640.2M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:35, mem=1480.7M)
+*** Begin netlist parsing (mem=1640.2M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/NETLIST/hold_fail.v'
+
+*** Memory Usage v#1 (Current mem = 1758.227M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1758.2M) ***
+#% End Load netlist data ... (date=10/16 12:55:35, total cpu=0:00:00.3, real=0:00:00.0, peak res=1541.7M, current mem=1541.7M)
+Set top cell to hold_fail_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell hold_fail_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 2 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2091.758M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:22.1, real=0:00:24.0, peak res=2102.1M, current mem=2102.1M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB01_SETUP_HOLD/SDC/04_hold_fixed.sdc
+Current (total cpu=0:00:22.3, real=0:00:25.0, peak res=2110.4M, current mem=2068.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2071.4M, current mem=2071.4M)
+Current (total cpu=0:00:22.3, real=0:00:25.0, peak res=2110.4M, current mem=2071.4M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2367.48 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: hold_fail_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2388.98)
+/dev/null
+End delay calculation. (MEM=2557 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2557 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:36 2026
+viaInitial ends at Fri Oct 16 12:55:36 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1670.145M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_setup_fail.v
+<CMD> set_top_module skew_setup_fail_top
+#% Begin Load MMMC data ... (date=10/16 12:55:37, mem=1525.6M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=1525.6M, current mem=1525.6M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.39min, fe_real=0.43min, fe_mem=1690.1M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:37, mem=1525.3M)
+*** Begin netlist parsing (mem=1690.1M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_setup_fail.v'
+
+*** Memory Usage v#1 (Current mem = 1808.211M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1808.2M) ***
+#% End Load netlist data ... (date=10/16 12:55:37, total cpu=0:00:00.3, real=0:00:00.0, peak res=1586.4M, current mem=1586.4M)
+Set top cell to skew_setup_fail_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell skew_setup_fail_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 11 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2141.742M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:24.3, real=0:00:27.0, peak res=2142.7M, current mem=2142.7M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/SDC/01_negative_skew_setup_fail.sdc
+Current (total cpu=0:00:24.5, real=0:00:27.0, peak res=2151.3M, current mem=2111.3M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2113.9M, current mem=2113.9M)
+Current (total cpu=0:00:24.6, real=0:00:27.0, peak res=2151.3M, current mem=2113.9M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2409.41 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: skew_setup_fail_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2430.91)
+/dev/null
+End delay calculation. (MEM=2623.96 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2623.96 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:38 2026
+viaInitial ends at Fri Oct 16 12:55:38 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1727.105M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_setup_fail.v
+<CMD> set_top_module skew_setup_fail_top
+#% Begin Load MMMC data ... (date=10/16 12:55:39, mem=1568.6M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=1568.6M, current mem=1568.6M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.43min, fe_real=0.47min, fe_mem=1747.1M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:39, mem=1568.2M)
+*** Begin netlist parsing (mem=1747.1M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_setup_fail.v'
+
+*** Memory Usage v#1 (Current mem = 1865.172M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1861.2M) ***
+#% End Load netlist data ... (date=10/16 12:55:39, total cpu=0:00:00.3, real=0:00:00.0, peak res=1629.5M, current mem=1629.5M)
+Set top cell to skew_setup_fail_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell skew_setup_fail_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 11 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2198.703M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:26.6, real=0:00:29.0, peak res=2185.0M, current mem=2185.0M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/SDC/02_negative_skew_setup_fixed.sdc
+Current (total cpu=0:00:26.8, real=0:00:29.0, peak res=2193.3M, current mem=2153.3M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2155.9M, current mem=2155.9M)
+Current (total cpu=0:00:26.8, real=0:00:29.0, peak res=2193.3M, current mem=2155.9M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2448.91 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: skew_setup_fail_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2470.41)
+/dev/null
+End delay calculation. (MEM=2666.48 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2666.48 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:40 2026
+viaInitial ends at Fri Oct 16 12:55:40 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1777.629M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_hold_fail.v
+<CMD> set_top_module skew_hold_fail_top
+#% Begin Load MMMC data ... (date=10/16 12:55:41, mem=1613.3M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1613.3M, current mem=1613.3M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.47min, fe_real=0.50min, fe_mem=1797.6M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:41, mem=1612.8M)
+*** Begin netlist parsing (mem=1797.6M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_hold_fail.v'
+
+*** Memory Usage v#1 (Current mem = 1915.695M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1915.7M) ***
+#% End Load netlist data ... (date=10/16 12:55:42, total cpu=0:00:00.3, real=0:00:01.0, peak res=1673.8M, current mem=1673.8M)
+Set top cell to skew_hold_fail_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell skew_hold_fail_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 3 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2249.227M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:28.8, real=0:00:31.0, peak res=2226.5M, current mem=2226.5M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/SDC/03_positive_skew_hold_fail.sdc
+Current (total cpu=0:00:29.1, real=0:00:31.0, peak res=2234.9M, current mem=2194.9M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2197.4M, current mem=2197.4M)
+Current (total cpu=0:00:29.1, real=0:00:31.0, peak res=2234.9M, current mem=2197.4M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2491.96 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: skew_hold_fail_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2512.47)
+/dev/null
+End delay calculation. (MEM=2708.52 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2708.52 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:43 2026
+viaInitial ends at Fri Oct 16 12:55:43 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1830.668M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_hold_fail.v
+<CMD> set_top_module skew_hold_fail_top
+#% Begin Load MMMC data ... (date=10/16 12:55:44, mem=1656.3M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1656.3M, current mem=1656.3M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.51min, fe_real=0.55min, fe_mem=1850.7M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:44, mem=1655.8M)
+*** Begin netlist parsing (mem=1850.7M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/NETLIST/skew_hold_fail.v'
+
+*** Memory Usage v#1 (Current mem = 1968.734M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1968.7M) ***
+#% End Load netlist data ... (date=10/16 12:55:44, total cpu=0:00:00.3, real=0:00:00.0, peak res=1716.9M, current mem=1716.9M)
+Set top cell to skew_hold_fail_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell skew_hold_fail_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 3 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2302.266M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:31.1, real=0:00:33.0, peak res=2268.6M, current mem=2268.6M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB02_CLOCK_SKEW/SDC/04_positive_skew_hold_fixed.sdc
+Current (total cpu=0:00:31.4, real=0:00:34.0, peak res=2276.9M, current mem=2236.9M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2239.5M, current mem=2239.5M)
+Current (total cpu=0:00:31.4, real=0:00:34.0, peak res=2276.9M, current mem=2239.5M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2547 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: skew_hold_fail_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2560.73)
+/dev/null
+End delay calculation. (MEM=2751.77 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2751.77 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:45 2026
+viaInitial ends at Fri Oct 16 12:55:45 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1877.910M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v
+<CMD> set_top_module mcp_top
+#% Begin Load MMMC data ... (date=10/16 12:55:46, mem=1700.7M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1700.7M, current mem=1700.7M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.54min, fe_real=0.58min, fe_mem=1897.9M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:46, mem=1700.2M)
+*** Begin netlist parsing (mem=1897.9M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v'
+
+*** Memory Usage v#1 (Current mem = 2015.977M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2016.0M) ***
+#% End Load netlist data ... (date=10/16 12:55:46, total cpu=0:00:00.3, real=0:00:00.0, peak res=1761.3M, current mem=1761.3M)
+Set top cell to mcp_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell mcp_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 14 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2349.508M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:33.4, real=0:00:36.0, peak res=2311.3M, current mem=2311.3M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/SDC/01_normal_setup_fail.sdc
+Current (total cpu=0:00:33.6, real=0:00:36.0, peak res=2319.6M, current mem=2279.6M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2280.2M, current mem=2280.2M)
+Current (total cpu=0:00:33.7, real=0:00:36.0, peak res=2319.6M, current mem=2280.2M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2594.24 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: mcp_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2607.97)
+/dev/null
+End delay calculation. (MEM=2794.02 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2794.02 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:47 2026
+viaInitial ends at Fri Oct 16 12:55:47 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1925.160M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v
+<CMD> set_top_module mcp_top
+#% Begin Load MMMC data ... (date=10/16 12:55:48, mem=1743.6M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1743.6M, current mem=1743.6M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.58min, fe_real=0.62min, fe_mem=1945.2M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:48, mem=1743.1M)
+*** Begin netlist parsing (mem=1945.2M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v'
+
+*** Memory Usage v#1 (Current mem = 2063.227M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2063.2M) ***
+#% End Load netlist data ... (date=10/16 12:55:48, total cpu=0:00:00.2, real=0:00:00.0, peak res=1804.2M, current mem=1804.2M)
+Set top cell to mcp_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell mcp_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 14 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2396.758M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:35.6, real=0:00:38.0, peak res=2354.0M, current mem=2354.0M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/SDC/02_mcp2_setup_pass.sdc
+Current (total cpu=0:00:35.9, real=0:00:38.0, peak res=2362.4M, current mem=2322.4M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2331.7M, current mem=2331.7M)
+Current (total cpu=0:00:36.0, real=0:00:38.0, peak res=2362.4M, current mem=2331.7M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2648.2 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: mcp_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2658.41)
+/dev/null
+End delay calculation. (MEM=2841.46 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2841.46 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:49 2026
+viaInitial ends at Fri Oct 16 12:55:49 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 1969.605M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v
+<CMD> set_top_module mcp_top
+#% Begin Load MMMC data ... (date=10/16 12:55:50, mem=1784.1M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1784.1M, current mem=1784.1M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.62min, fe_real=0.65min, fe_mem=1989.6M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:50, mem=1783.5M)
+*** Begin netlist parsing (mem=1989.6M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v'
+
+*** Memory Usage v#1 (Current mem = 2107.672M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2107.7M) ***
+#% End Load netlist data ... (date=10/16 12:55:51, total cpu=0:00:00.3, real=0:00:00.0, peak res=1844.6M, current mem=1844.6M)
+Set top cell to mcp_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell mcp_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 14 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2441.203M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:38.1, real=0:00:40.0, peak res=2395.5M, current mem=2395.4M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/SDC/03_mcp2_setup_hold_corrected.sdc
+Current (total cpu=0:00:38.3, real=0:00:41.0, peak res=2404.1M, current mem=2364.0M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2373.3M, current mem=2373.3M)
+Current (total cpu=0:00:38.4, real=0:00:41.0, peak res=2404.1M, current mem=2373.3M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2692.64 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: mcp_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2702.86)
+/dev/null
+End delay calculation. (MEM=2883.9 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2883.9 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:52 2026
+viaInitial ends at Fri Oct 16 12:55:52 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2013.043M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v
+<CMD> set_top_module mcp_top
+#% Begin Load MMMC data ... (date=10/16 12:55:53, mem=1828.9M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1828.9M, current mem=1828.9M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.66min, fe_real=0.70min, fe_mem=2033.0M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:53, mem=1828.3M)
+*** Begin netlist parsing (mem=2033.0M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v'
+
+*** Memory Usage v#1 (Current mem = 2151.109M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2151.1M) ***
+#% End Load netlist data ... (date=10/16 12:55:53, total cpu=0:00:00.3, real=0:00:00.0, peak res=1889.4M, current mem=1889.4M)
+Set top cell to mcp_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell mcp_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 14 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2484.641M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:40.5, real=0:00:43.0, peak res=2438.4M, current mem=2438.4M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/SDC/04_mcp2_short_period_fail.sdc
+Current (total cpu=0:00:40.8, real=0:00:43.0, peak res=2446.7M, current mem=2406.7M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2416.0M, current mem=2416.0M)
+Current (total cpu=0:00:40.8, real=0:00:43.0, peak res=2446.7M, current mem=2416.0M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2735.08 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: mcp_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2745.3)
+/dev/null
+End delay calculation. (MEM=2926.34 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2926.34 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:54 2026
+viaInitial ends at Fri Oct 16 12:55:54 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2059.480M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v
+<CMD> set_top_module mcp_top
+#% Begin Load MMMC data ... (date=10/16 12:55:55, mem=1869.7M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1869.7M, current mem=1869.7M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.70min, fe_real=0.73min, fe_mem=2079.5M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:55, mem=1869.1M)
+*** Begin netlist parsing (mem=2079.5M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/NETLIST/mcp.v'
+
+*** Memory Usage v#1 (Current mem = 2197.547M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2193.5M) ***
+#% End Load netlist data ... (date=10/16 12:55:56, total cpu=0:00:00.3, real=0:00:01.0, peak res=1930.3M, current mem=1930.3M)
+Set top cell to mcp_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell mcp_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 14 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2531.078M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:42.9, real=0:00:45.0, peak res=2479.8M, current mem=2479.8M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB03_MULTICYCLE/SDC/05_mcp3_pass.sdc
+Current (total cpu=0:00:43.2, real=0:00:45.0, peak res=2488.2M, current mem=2448.1M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:01.0, peak res=2457.4M, current mem=2457.4M)
+Current (total cpu=0:00:43.2, real=0:00:46.0, peak res=2488.2M, current mem=2457.4M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2781.52 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: mcp_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2791.73)
+/dev/null
+End delay calculation. (MEM=2968.77 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2968.77 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:57 2026
+viaInitial ends at Fri Oct 16 12:55:57 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2098.918M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/NETLIST/half_cycle.v
+<CMD> set_top_module half_cycle_top
+#% Begin Load MMMC data ... (date=10/16 12:55:58, mem=1912.2M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:55:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1912.2M, current mem=1912.2M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.74min, fe_real=0.78min, fe_mem=2118.9M) ***
+#% Begin Load netlist data ... (date=10/16 12:55:58, mem=1911.6M)
+*** Begin netlist parsing (mem=2118.9M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/NETLIST/half_cycle.v'
+
+*** Memory Usage v#1 (Current mem = 2236.984M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2237.0M) ***
+#% End Load netlist data ... (date=10/16 12:55:58, total cpu=0:00:00.3, real=0:00:00.0, peak res=1972.7M, current mem=1972.7M)
+Set top cell to half_cycle_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell half_cycle_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 10 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2570.516M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:45.3, real=0:00:48.0, peak res=2521.7M, current mem=2521.7M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/SDC/01_half_setup_fail.sdc
+Current (total cpu=0:00:45.6, real=0:00:48.0, peak res=2530.0M, current mem=2490.0M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2490.6M, current mem=2490.6M)
+Current (total cpu=0:00:45.6, real=0:00:48.0, peak res=2530.0M, current mem=2490.6M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2812.25 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: half_cycle_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2825.98)
+/dev/null
+End delay calculation. (MEM=3008.02 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3008.02 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:55:59 2026
+viaInitial ends at Fri Oct 16 12:55:59 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2147.160M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/NETLIST/half_cycle.v
+<CMD> set_top_module half_cycle_top
+#% Begin Load MMMC data ... (date=10/16 12:56:00, mem=1953.8M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:56:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=1953.8M, current mem=1953.8M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.78min, fe_real=0.82min, fe_mem=2167.2M) ***
+#% Begin Load netlist data ... (date=10/16 12:56:00, mem=1953.1M)
+*** Begin netlist parsing (mem=2167.2M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/NETLIST/half_cycle.v'
+
+*** Memory Usage v#1 (Current mem = 2285.227M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2285.2M) ***
+#% End Load netlist data ... (date=10/16 12:56:00, total cpu=0:00:00.3, real=0:00:00.0, peak res=2014.1M, current mem=2014.1M)
+Set top cell to half_cycle_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell half_cycle_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 10 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2618.758M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:47.6, real=0:00:50.0, peak res=2563.5M, current mem=2563.5M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/SDC/02_half_setup_fixed.sdc
+Current (total cpu=0:00:47.9, real=0:00:50.0, peak res=2571.8M, current mem=2531.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2532.4M, current mem=2532.4M)
+Current (total cpu=0:00:47.9, real=0:00:50.0, peak res=2571.8M, current mem=2532.4M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2860.49 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: half_cycle_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2874.22)
+/dev/null
+End delay calculation. (MEM=3059.26 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3059.26 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:56:02 2026
+viaInitial ends at Fri Oct 16 12:56:02 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2195.402M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/NETLIST/half_cycle.v
+<CMD> set_top_module half_cycle_top
+#% Begin Load MMMC data ... (date=10/16 12:56:02, mem=2003.8M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:56:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=2003.8M, current mem=2003.8M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.02min, mem=20.0M, fe_cpu=0.82min, fe_real=0.87min, fe_mem=2215.4M) ***
+#% Begin Load netlist data ... (date=10/16 12:56:03, mem=2003.2M)
+*** Begin netlist parsing (mem=2215.4M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/NETLIST/half_cycle.v'
+
+*** Memory Usage v#1 (Current mem = 2333.469M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2333.5M) ***
+#% End Load netlist data ... (date=10/16 12:56:03, total cpu=0:00:00.3, real=0:00:00.0, peak res=2064.3M, current mem=2064.3M)
+Set top cell to half_cycle_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell half_cycle_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 10 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2667.000M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:50.0, real=0:00:52.0, peak res=2611.4M, current mem=2611.4M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB04_HALF_CYCLE/SDC/03_half_hold_check.sdc
+Current (total cpu=0:00:50.2, real=0:00:53.0, peak res=2619.7M, current mem=2579.7M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2580.3M, current mem=2580.3M)
+Current (total cpu=0:00:50.2, real=0:00:53.0, peak res=2619.7M, current mem=2580.3M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2909.73 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: half_cycle_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2923.46)
+/dev/null
+End delay calculation. (MEM=3100.5 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3100.5 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:56:04 2026
+viaInitial ends at Fri Oct 16 12:56:04 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2242.645M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/NETLIST/false_path.v
+<CMD> set_top_module false_path_top
+#% Begin Load MMMC data ... (date=10/16 12:56:05, mem=2045.2M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:56:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=2045.2M, current mem=2045.2M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.86min, fe_real=0.90min, fe_mem=2262.6M) ***
+#% Begin Load netlist data ... (date=10/16 12:56:05, mem=2044.6M)
+*** Begin netlist parsing (mem=2262.6M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/NETLIST/false_path.v'
+
+*** Memory Usage v#1 (Current mem = 2380.711M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2380.7M) ***
+#% End Load netlist data ... (date=10/16 12:56:05, total cpu=0:00:00.3, real=0:00:00.0, peak res=2105.8M, current mem=2105.8M)
+Set top cell to false_path_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell false_path_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 22 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2714.242M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:52.3, real=0:00:55.0, peak res=2653.2M, current mem=2653.2M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/SDC/01_before_false_path.sdc
+Current (total cpu=0:00:52.6, real=0:00:55.0, peak res=2661.6M, current mem=2621.6M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2622.2M, current mem=2622.2M)
+Current (total cpu=0:00:52.6, real=0:00:55.0, peak res=2661.6M, current mem=2622.2M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2956.98 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: false_path_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2970.7)
+/dev/null
+End delay calculation. (MEM=3147.74 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3147.74 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:56:06 2026
+viaInitial ends at Fri Oct 16 12:56:06 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2279.887M, initial mem = 618.465M) ***
+<CMD> read_lib /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/LIB/teaching_sta.lib
+<CMD> read_verilog /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/NETLIST/false_path.v
+<CMD> set_top_module false_path_top
+#% Begin Load MMMC data ... (date=10/16 12:56:07, mem=2087.1M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/16 12:56:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=2087.1M, current mem=2087.1M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_459843.tcl
+Reading default_emulate_libset_max timing library '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/LIB/teaching_sta.lib' ...
+Read 6 cells in library 'teaching_sta_lib' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=20.0M, fe_cpu=0.90min, fe_real=0.93min, fe_mem=2299.9M) ***
+#% Begin Load netlist data ... (date=10/16 12:56:07, mem=2086.4M)
+*** Begin netlist parsing (mem=2299.9M) ***
+Reading verilog netlist '/home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/NETLIST/false_path.v'
+
+*** Memory Usage v#1 (Current mem = 2417.953M, initial mem = 618.465M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2418.0M) ***
+#% End Load netlist data ... (date=10/16 12:56:08, total cpu=0:00:00.3, real=0:00:01.0, peak res=2147.6M, current mem=2147.6M)
+Set top cell to false_path_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell false_path_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 7 modules.
+** info: there are 22 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2751.484M, initial mem = 618.465M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+**WARN: analysis view default_emulate_view not found, use default_view_setup
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:54.7, real=0:00:57.0, peak res=2693.1M, current mem=2693.1M)
+Total number of combinational cells: 3
+Total number of sequential cells: 3
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: DLY_X1 BUF_X1
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1
+Total number of usable inverters: 1
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/vlsi14/24BVD1042/lab9/STA_SMS/LAB05_FALSE_PATH/SDC/02_after_false_path.sdc
+Current (total cpu=0:00:55.0, real=0:00:57.0, peak res=2701.7M, current mem=2661.7M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2671.0M, current mem=2671.0M)
+Current (total cpu=0:00:55.0, real=0:00:57.0, peak res=2701.7M, current mem=2671.0M)
+<CMD> report_timing -late -max_paths 5 -nworst 1 -path_type full_clock > $setup_rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2997.92 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: false_path_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=3008.14)
+/dev/null
+End delay calculation. (MEM=3189.18 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3189.18 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> report_timing -early -max_paths 5 -nworst 1 -path_type full_clock > $hold_rpt
+<CMD> free_design
+**WARN: (IMPSYC-6379):	freeDesign does not completely reset all design states and settings. This is because resetting all design states and settings would cause error or crash when you would restore the database or edit it after using freeDesign.
+
+viaInitial starts at Fri Oct 16 12:56:09 2026
+viaInitial ends at Fri Oct 16 12:56:09 2026
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 2329.324M, initial mem = 618.465M) ***
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 2329.324M, initial mem = 618.465M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSYC-6379         18  freeDesign does not completely reset all...
+*** Message Summary: 18 warning(s), 0 error(s)
+
+--- Ending "Tempus Timing Solution" (totcpu=0:00:55.6, real=0:00:58.0, mem=2329.3M) ---

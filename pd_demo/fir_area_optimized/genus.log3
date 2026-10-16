@@ -1,0 +1,77 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:34:11.328546] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Wed Sep 09 12:34:11 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     148737
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:34:13.458843] Periodic Lic check successful
+[12:34:13.458849] Feature usage summary:
+[12:34:13.458849] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 2: set TOP_MODULE "fir_4tap_shared"
+@file(fir_4taps.tcl) 4: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(fir_4taps.tcl) 8: read_lib slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(fir_4taps.tcl) 9: read_hdl {DFF.v fir_4tap_shared_mult.v}
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'DFF.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+        yout = 0;
+        |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'yout' in file 'fir_4tap_shared_mult.v' on line 63, column 9.
+        : A net cannot be assigned within an always block.  This situation may occur because an output port is not explicitly declared as a reg.
+            yout = acc;
+            |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'yout' in file 'fir_4tap_shared_mult.v' on line 149, column 13.
+#@ End verbose source ./fir_4taps.tcl
+1
+Encountered problems processing file: fir_4taps.tcl
+WARNING: This version of the tool is 1538 days old.
+@genus:root: 2> cd ..
+@genus:root: 3> exit
+
+Lic Summary:
+[12:34:32.399363] Cdslmd servers: cadence-c2s
+[12:34:32.399371] Feature usage summary:
+[12:34:32.399371] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,29 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+Options:	
+Date:		Fri Sep 18 12:18:23 2026
+Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[12:18:23.328586] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_1893541_z7RfVI'.
+
+--------------------------------------------------------------------------------
+Exiting Tempus Timing Solution on Fri Sep 18 12:18:55 2026
+  Total CPU time:     0:00:14
+  Total real time:    0:00:33
+  Peak memory (main): 1252.54MB
+
+
+*** Memory Usage v#1 (Current mem = 1313.160M, initial mem = 618.465M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Tempus Timing Solution" (totcpu=0:00:14.1, real=0:00:32.0, mem=1313.2M) ---

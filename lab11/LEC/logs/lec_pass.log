@@ -1,0 +1,87 @@
+                          CONFORMAL (R)
+                   Version 21.10-s300 (22-Aug-2021) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2021. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1880 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: read library ../LIB/slow.v -verilog -both
+// Parsing file ../LIB/slow.v ...
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:56)
+// Warning: (VLG5.5) Internal primitive is recognized (occurrence:120)
+// Warning: (VLG5.6) Named port association is ignored for primitive gate (occurrence:120)
+// Warning: (IGN4) Attribute instance(s) are ignored (occurrence:2)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:1)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:16)
+// Note: Read VERILOG library successfully
+// Command: read design ../RTL/design.v -verilog -golden
+// Parsing file ../RTL/design.v ...
+// Golden root module is set to 'design_top'
+// Note: Read VERILOG design successfully
+// Command: read design ../synthesis/outputs/design_netlist.v -verilog -revised
+// Parsing file ../synthesis/outputs/design_netlist.v ...
+// Revised root module is set to 'design_top'
+// Note: Read VERILOG design successfully
+// Command: set root module design_top -golden
+// Warning: Golden root module is already at 'design_top'
+// Command: set root module design_top -revised
+// Warning: Revised root module is already at 'design_top'
+// Command: report design data
+============================================
+Summary           Golden         Revised
+============================================
+Design-modules         1               1
+Library-cells          5              56
+============================================
+Primitives      Golden              Revised
+============================================
+INPUT               27                   27
+OUTPUT               9                    9
+--------------------------------------------
+AND        *        65                   83
+BUF        *         1                    0
+DFF                  9                    9
+INV        *        10                   29
+MUX        *         9                    0
+NAND       *         0                    8
+NOR        *         0                    1
+OR         *        22                   34
+XOR        *        54                   28
+------ word-level --------------------------
+ADD        *         2                    0
+SUBTRACT   *         1                    0
+WMUX       *         1                    0
+WXOR       *         1                    0
+--------------------------------------------
+Total              170                  192
+
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            27     9      9         45      
+--------------------------------------------------------------------------------
+Revised           27     9      9         45      
+================================================================================
+// Command: report unmapped points
+There is no unmapped point
+// Command: add compared points -all
+// 18 compared points added to compare list
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           9      9         18      
+================================================================================
+// Command: exit -force

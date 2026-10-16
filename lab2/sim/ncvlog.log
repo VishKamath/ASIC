@@ -1,0 +1,12 @@
+ncvlog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+module 4bit_ca(A,B,Cin,Sum,Cout);
+       |
+ncvlog: *E,EXPMDN (/home/vlsi14/24BVD1042/lab1/sim/4bit_ca.v,1|7): expecting a module name.
+endmodule
+        |
+ncvlog: *E,EXPRPA (/home/vlsi14/24BVD1042/lab1/sim/4bit_ca.v,9|8): expecting a right parenthesis (')') [12.3.4(IEEE)].
+endmodule
+        |
+ncvlog: *E,EXPRPA (/home/vlsi14/24BVD1042/lab1/sim/4bit_ca.v,9|8): expecting a right parenthesis (')') [12.1.2][7.1(IEEE)].
+ncvlog: Memory Usage - 21.4M program + 27.4M data = 48.7M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

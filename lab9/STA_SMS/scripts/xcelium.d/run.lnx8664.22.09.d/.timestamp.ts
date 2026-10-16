@@ -1,0 +1,5 @@
+1789108155 /home/vlsi14/24BVD1042/lab8/SMS_Activity_Power_analaysis/Activity_Based_Power_Analysis_EASY_TCL/TB/tb_data_low.v
+1789108155 /home/vlsi14/24BVD1042/lab8/SMS_Activity_Power_analaysis/Activity_Based_Power_Analysis_EASY_TCL/RTL/activity_power_top.v
+1789108155 /home/vlsi14/24BVD1042/lab8/SMS_Activity_Power_analaysis/Activity_Based_Power_Analysis_EASY_TCL/TB/tb_clk_low.v
+1789108155 /home/vlsi14/24BVD1042/lab8/SMS_Activity_Power_analaysis/Activity_Based_Power_Analysis_EASY_TCL/TB/tb_data_high.v
+1789108155 /home/vlsi14/24BVD1042/lab8/SMS_Activity_Power_analaysis/Activity_Based_Power_Analysis_EASY_TCL/TB/tb_clk_high.v

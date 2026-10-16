@@ -1,0 +1,68 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:58:36.328698] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: -no_gui -batch -files run_temp.tcl 
+Date:    Wed Sep 09 18:58:36 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     1307486
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:58:37.182169] Periodic Lic check successful
+[18:58:37.182170] Feature usage summary:
+[18:58:37.182171] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_temp.tcl
+#@ Begin verbose source ./run_temp.tcl
+@file(run_temp.tcl) 1: set TOP_MODULE "fir_4tap_piped"
+@file(run_temp.tcl) 3: set_db init_lib_search_path /home/install/FOUNDRY/digital/180nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/180nm/dig/lib
+@file(run_temp.tcl) 4: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.620000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(run_temp.tcl) 6: read_hdl {fir_4tap_shared_mult.v}
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'fir_4tap_shared_mult.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@file(run_temp.tcl) 7: elaborate
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(run_temp.tcl) 8: read_sdc fir_4tap_shared_mult.sdc
+#@ End verbose source ./run_temp.tcl
+Design not exist for read_sdc
+Encountered problems processing file: run_temp.tcl
+
+Lic Summary:
+[18:58:42.425521] Cdslmd servers: cadence-c2s
+[18:58:42.425529] Feature usage summary:
+[18:58:42.425530] Genus_Synthesis
+

@@ -1,0 +1,109 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:02:40.328570] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Wed Sep 09 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Wed Sep 09 18:02:40 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     1047292
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:02:41.139409] Periodic Lic check successful
+[18:02:41.139410] Feature usage summary:
+[18:02:41.139410] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 1: set TOP_MODULE "fir_4tap_shared"
+@file(fir_4taps.tcl) 2: set HDL_FILE   "fir_4tap_shared_mult.v"
+@file(fir_4taps.tcl) 3: set SDC_FILE   "fir_4tap_shared_mult.sdc"
+@file(fir_4taps.tcl) 5: set tech_nodes {"180nm" "90nm" "45nm"}
+@file(fir_4taps.tcl) 6: set corners    {"slow" "typical" "fast"}
+@file(fir_4taps.tcl) 9: file mkdir output/netlist
+@file(fir_4taps.tcl) 10: file mkdir output/constraints
+@file(fir_4taps.tcl) 11: file mkdir output/reports
+@file(fir_4taps.tcl) 13: foreach tech $tech_nodes {
+    foreach corner $corners {
+ 
+        # Re-initialize clean state
+        reset_db
+ 
+        # Define full path to library file directly
+        set lib_path "/home/install/FOUNDRY/digital/${tech}/dig/lib/${corner}.lib"
+ 
+        # Check if library exists (handles typ.lib vs typical.lib naming)
+        if {![file exists $lib_path]} {
+            set lib_path "/home/install/FOUNDRY/digital/${tech}/dig/lib/typ.lib"
+        }
+ 
+        read_libs $lib_path
+ 
+        # Read RTL and elaborate
+        read_hdl $HDL_FILE
+        elaborate $TOP_MODULE
+        init_design
+ 
+        # Apply constraints
+        read_sdc $SDC_FILE
+ 
+        # Synthesis settings
+        set_db syn_generic_effort medium
+        set_db syn_map_effort medium
+        set_db syn_opt_effort medium
+ 
+        # Run Synthesis
+        syn_generic
+        syn_map
+        syn_opt
+ 
+        # Identifier tag
+        set run_tag "${TOP_MODULE}_${tech}_${corner}"
+ 
+        # Write outputs
+        write_hdl > "output/netlist/${run_tag}_opt.v"
+        write_sdc > "output/constraints/${run_tag}_synth.sdc"
+ 
+        # Export reports
+        report_timing > "output/reports/${run_tag}_timing.rpt"
+        report_power  > "output/reports/${run_tag}_power.rpt"
+        report_area   > "output/reports/${run_tag}_area.rpt"
+        report_gates  > "output/reports/${run_tag}_gates.rpt"
+        report_qor    > "output/reports/${run_tag}_qor.rpt"
+ 
+        puts ">>> Finished ${run_tag} <<<"
+    }
+}
+Error   : A required argument was not specified. [TUI-202] [reset_db]
+        : No argument was specified.
+        : Rerun the command specifying all required arguments.
+#@ End verbose source ./fir_4taps.tcl
+1
+Encountered problems processing file: fir_4taps.tcl
+WARNING: This version of the tool is 1539 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[18:08:07.174281] Cdslmd servers: cadence-c2s
+[18:08:07.174288] Feature usage summary:
+[18:08:07.174289] Genus_Synthesis
+
+Normal exit.
